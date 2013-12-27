@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">GNE Nepal App</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_slide2">Slide2Activity</string>
+    <string name="title_activity_slide3">Slide3Activity</string>
+    <string name="title_activity_slide4">Slide4Activity</string>
+    <string name="title_activity_slide5">Slide5Activity</string>
+    <string name="title_activity_slide6">Slide6Activity</string>
+    <string name="title_activity_slide7">Slide7Activity</string>
+    <string name="next">&gt;&gt;&gt;</string>
+    <string name="title_activity_slide8">Slide8Activity</string>
+    <string name="title_activity_slide9">Slide9Activity</string>
+    <string name="title_activity_slide12">Slide12Activity</string>
+    <string name="title_activity_slide14">Slide14Activity</string>
+    <string name="title_activity_slide15">Slide15Activity</string>
+    <string name="title_activity_slide16">Slide16Activity</string>
+    <string name="title_activity_slide17">Slide17Activity</string>
+    <string name="title_activity_slide18">Slide18Activity</string>
+    <string name="title_activity_slide19">Slide19Activity</string>
+    <string name="title_activity_slide20">Slide20Activity</string>
+    <string name="title_activity_slide22">Slide22Activity</string>
+    <string name="title_activity_slide23">Slide23Activity</string>
+    <string name="title_activity_slide24">Slide24Activity</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_slide25">Slide25Activity</string>
+    <string name="title_activity_slide26">Slide26Activity</string>
+    <string name="title_activity_slide27">Slide27Activity</string>
+    <string name="title_activity_slide28">Slide28Activity</string>
+    <string name="title_activity_slide29">Slide29Activity</string>
+    <string name="title_activity_slide30">Slide30Activity</string>
+
+</resources>
