@@ -7,25 +7,27 @@ import android.view.Menu;
 import android.view.View;
 
 public class Slide24Activity extends Activity {
-	public void nextMethodSL24(View view) {
-		Intent intent = new Intent(this, Slide25Activity.class);
-		startActivity(intent);
-		finish();
-	}
+    public void nextMethodSL24(View view) {
+        if (SoundModule.playing == false) {
+            Intent intent = new Intent(this, Slide25Activity.class);
+            startActivity(intent);
+            finish();
+        }
+    }
 
-	@Override
-	protected void onCreate(Bundle savedInstanceState) {
-		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_slide24);
-		SoundModule SoundModule = new SoundModule(this);
-		SoundModule.play(R.raw.vrp_slide24);
-	}
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_slide24);
+        SoundModule SoundModule = new SoundModule(this);
+        SoundModule.play(R.raw.vrp_slide24);
+    }
 
-	@Override
-	public boolean onCreateOptionsMenu(Menu menu) {
-		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.slide24, menu);
-		return true;
-	}
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.slide24, menu);
+        return true;
+    }
 
 }

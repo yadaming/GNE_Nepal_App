@@ -9,13 +9,13 @@ import android.widget.CheckBox;
 
 public class Slide12Activity extends Activity {
 
-	private static int clickedNum = 0;
+    private static int clickedNum = 0;
 
     public void cb1(View view) {
         boolean checked = ((CheckBox) view).isChecked();
-                if (checked) {
-                    ScoreKeeper.sl12 = ScoreKeeper.sl12 + 1;
-                }
+        if (checked) {
+            ScoreKeeper.sl12 = ScoreKeeper.sl12 + 1;
+        }
     }
 
     public void cb2(View view) {
@@ -82,38 +82,39 @@ public class Slide12Activity extends Activity {
     }
 
     public void nextMethodSL12(View view) {
-		if(clickedNum == 0) {
+        if (clickedNum == 0) {
             SoundModule SoundModule = new SoundModule(this);
             SoundModule.play(R.raw.vrp_slide13);
         }
-        if(clickedNum == 1) {
+        if (clickedNum == 1) {
             foodTouch();
         }
         clickedNum = 1;
-	}
-	
-	public void foodTouch() {
-		Intent intent = new Intent(this, Slide14Activity.class);
-		startActivity(intent);
-		finish();
-	}
+    }
 
-	@Override
-	protected void onCreate(Bundle savedInstanceState) {
-		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_slide12);
-		SoundModule SoundModule = new SoundModule(this);
-		SoundModule.play(R.raw.vrp_slide12);
+    public void foodTouch() {
+        if (SoundModule.playing == false) {
+            Intent intent = new Intent(this, Slide14Activity.class);
+            startActivity(intent);
+            finish();
+        }
+    }
 
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_slide12);
+        SoundModule SoundModule = new SoundModule(this);
+        SoundModule.play(R.raw.vrp_slide12);
 
 
     }
 
-	@Override
-	public boolean onCreateOptionsMenu(Menu menu) {
-		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.slide12, menu);
-		return true;
-	}
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.slide12, menu);
+        return true;
+    }
 
 }
