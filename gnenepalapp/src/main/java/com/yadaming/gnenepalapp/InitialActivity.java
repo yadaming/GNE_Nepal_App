@@ -9,9 +9,11 @@ import android.view.View;
 public class InitialActivity extends Activity {
 
     public void nextMethod(View view) {
-        Intent intent = new Intent(this, Slide2Activity.class);
-        startActivity(intent);
-        finish();
+        if (SoundModule.playing == false) {
+            Intent intent = new Intent(this, Slide2Activity.class);
+            startActivity(intent);
+            finish();
+        }
     }
 
     @Override
