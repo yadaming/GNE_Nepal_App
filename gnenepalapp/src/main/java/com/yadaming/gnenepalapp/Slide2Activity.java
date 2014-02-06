@@ -18,7 +18,7 @@ public class Slide2Activity extends Activity {
 	
 	public void yesMethod(View view) {
 		ScoreKeeper.correct = ScoreKeeper.correct + 1;
-		Intent intent = new Intent(this, Slide3Activity.class);
+		Intent intent = new Intent(this, Slide4Activity.class);
 		startActivity(intent);
 		finish();
 	}

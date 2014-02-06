@@ -40,12 +40,14 @@
         android:layout_height="match_parent"
         android:layout_weight="1"
         android:onClick="yesMethodSL5"
+        android:background="#00FF00"
         android:src="@drawable/yes" />
     <ImageButton
         android:id="@+id/noButton"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1"
+        android:background="#FF0000"
         android:src="@drawable/no"
         android:onClick="noMethodSL5" />
     </LinearLayout>
