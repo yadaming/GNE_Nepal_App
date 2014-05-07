@@ -13,72 +13,92 @@ public class Slide12Activity extends Activity {
 
     public void cb1(View view) {
         boolean checked = ((CheckBox) view).isChecked();
+        /*
         if (checked) {
             ScoreKeeper.sl12 = ScoreKeeper.sl12 + 1;
         }
+        */
     }
 
     public void cb2(View view) {
         boolean checked = ((CheckBox) view).isChecked();
+        /*
         if (checked) {
             ScoreKeeper.sl12 = ScoreKeeper.sl12 + 1;
         }
+        */
     }
 
     public void cb3(View view) {
         boolean checked = ((CheckBox) view).isChecked();
+        /*
         if (checked) {
             ScoreKeeper.sl12 = ScoreKeeper.sl12 + 1;
         }
+        */
     }
 
     public void cb4(View view) {
         boolean checked = ((CheckBox) view).isChecked();
+        /*
         if (checked) {
             ScoreKeeper.sl12 = ScoreKeeper.sl12 + 1;
         }
+        */
     }
 
     public void cb5(View view) {
         boolean checked = ((CheckBox) view).isChecked();
+        /*
         if (checked) {
             ScoreKeeper.sl12 = ScoreKeeper.sl12 + 1;
         }
+        */
     }
 
     public void cb6(View view) {
         boolean checked = ((CheckBox) view).isChecked();
+        /*
         if (checked) {
             ScoreKeeper.sl12 = ScoreKeeper.sl12 + 1;
         }
+        */
     }
 
     public void cb7(View view) {
         boolean checked = ((CheckBox) view).isChecked();
+        /*
         if (checked) {
             ScoreKeeper.sl12 = ScoreKeeper.sl12 + 1;
         }
+        */
     }
 
     public void cb8(View view) {
         boolean checked = ((CheckBox) view).isChecked();
+        /*
         if (checked) {
             ScoreKeeper.sl12 = ScoreKeeper.sl12 + 1;
         }
+        */
     }
 
     public void cb9(View view) {
         boolean checked = ((CheckBox) view).isChecked();
+        /*
         if (checked) {
             ScoreKeeper.sl12 = ScoreKeeper.sl12 + 1;
         }
+        */
     }
 
     public void cb10(View view) {
         boolean checked = ((CheckBox) view).isChecked();
+        /*
         if (checked) {
             ScoreKeeper.sl12 = ScoreKeeper.sl12 + 1;
         }
+        */
     }
 
     public void nextMethodSL12(View view) {
@@ -106,8 +126,6 @@ public class Slide12Activity extends Activity {
         setContentView(R.layout.activity_slide12);
         SoundModule SoundModule = new SoundModule(this);
         SoundModule.play(R.raw.vrp_slide12);
-
-
     }
 
     @Override
