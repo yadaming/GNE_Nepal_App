@@ -2,6 +2,7 @@
     The initial main activity for the GNE Nepal App
 
  */
+
 package com.yadaming.gnenepalapp;
 
 import android.app.Activity;
@@ -14,7 +15,7 @@ public class InitialActivity extends Activity
 {
     public void nextMethod(View view)
     {
-        if (SoundModule.playing == false)
+        if (SoundModule.playing == false) // if the audio is not playing then the next method can work
         {
             Intent intent = new Intent(this, Slide2Activity.class);
             startActivity(intent);
