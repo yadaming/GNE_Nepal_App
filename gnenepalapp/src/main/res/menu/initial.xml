@@ -1,10 +1,34 @@
-<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    >
 
     <item
         android:id="@+id/action_settings"
         android:orderInCategory="100"
-        android:showAsAction="never"
         android:icon="@drawable/flag_nepal"
         android:title="@string/action_settings"/>
+    <item
+        android:id="@+id/action_slide2"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:icon="@drawable/flag_nepal"
+        android:title="@string/title_activity_slide2"/>
+    <item
+        android:id="@+id/action_slide3"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:icon="@drawable/flag_nepal"
+        android:title="@string/title_activity_slide3"/>
+    <item
+        android:id="@+id/action_slide4"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:icon="@drawable/flag_nepal"
+        android:title="@string/title_activity_slide4"/>
+    <item
+        android:id="@+id/action_slide5"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:icon="@drawable/flag_nepal"
+        android:title="@string/title_activity_slide5"/>
 
 </menu>
