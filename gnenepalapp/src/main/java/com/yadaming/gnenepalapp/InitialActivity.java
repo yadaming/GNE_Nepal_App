@@ -64,6 +64,10 @@ public class InitialActivity extends Activity
                     startActivity(intent1);
                     finish();
                 }
+                else if (SoundModule.playing) // if the audio is playing: tell the user to wait
+                {
+                    Toast.makeText(getBaseContext(), "You have to hear this!", Toast.LENGTH_SHORT).show();
+                }
                 break;
 
             case R.id.action_slide2:
@@ -72,6 +76,10 @@ public class InitialActivity extends Activity
                     Intent intent2 = new Intent(this, Slide2Activity.class);
                     startActivity(intent2);
                     finish();
+                }
+                else if (SoundModule.playing) // if the audio is playing: tell the user to wait
+                {
+                    Toast.makeText(getBaseContext(), "You have to hear this!", Toast.LENGTH_SHORT).show();
                 }
                 break;
 
@@ -82,6 +90,10 @@ public class InitialActivity extends Activity
                     startActivity(intent3);
                     finish();
                 }
+                else if (SoundModule.playing) // if the audio is playing: tell the user to wait
+                {
+                    Toast.makeText(getBaseContext(), "You have to hear this!", Toast.LENGTH_SHORT).show();
+                }
                 break;
 
             case R.id.action_slide4:
@@ -91,6 +103,10 @@ public class InitialActivity extends Activity
                     startActivity(intent4);
                     finish();
                 }
+                else if (SoundModule.playing) // if the audio is playing: tell the user to wait
+                {
+                    Toast.makeText(getBaseContext(), "You have to hear this!", Toast.LENGTH_SHORT).show();
+                }
                 break;
 
             case R.id.action_slide5:
@@ -99,6 +115,10 @@ public class InitialActivity extends Activity
                     Intent intent5 = new Intent(this, Slide5Activity.class);
                     startActivity(intent5);
                     finish();
+                }
+                else if (SoundModule.playing) // if the audio is playing: tell the user to wait
+                {
+                    Toast.makeText(getBaseContext(), "You have to hear this!", Toast.LENGTH_SHORT).show();
                 }
                 break;
 
