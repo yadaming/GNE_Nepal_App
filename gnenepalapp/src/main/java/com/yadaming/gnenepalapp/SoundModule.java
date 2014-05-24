@@ -8,13 +8,17 @@ public class SoundModule {
     Context c;
     public static boolean playing;
 
+    // create a private MediaPlayer instance
+    private static MediaPlayer mMediaPlayer;
+
     public SoundModule(Context context) {
         c = context;
     }
 
     public void play(int soundToPlay) {
         playing = true;
-        MediaPlayer mMediaPlayer = MediaPlayer.create(c, soundToPlay);
+        //MediaPlayer mMediaPlayer = MediaPlayer.create(c, soundToPlay);
+        mMediaPlayer = MediaPlayer.create(c, soundToPlay);
         mMediaPlayer.start();
         mMediaPlayer.setOnCompletionListener(new OnCompletionListener() {
 
@@ -23,6 +27,12 @@ public class SoundModule {
                 playing = false;
             }
         });
+    }
+
+    public void stop(int soundToPlay)
+    {
+        mMediaPlayer.stop();
+        playing = false;
     }
 
 }

@@ -18,11 +18,15 @@ public class InitialActivity extends Activity
 {
     public void nextMethod(View view)
     {
-        if (SoundModule.playing == false) // if the audio is not playing then the next method can work
+        if (!SoundModule.playing) // if the audio is not playing then the next method can work
         {
             Intent intent = new Intent(this, Slide2Activity.class);
             startActivity(intent);
             finish();
+        }
+        else if (SoundModule.playing) // if the audio is playing: tell the user to wait
+        {
+            Toast.makeText(getBaseContext(), "You have to hear this!", Toast.LENGTH_SHORT).show();
         }
     }
 
@@ -50,7 +54,6 @@ public class InitialActivity extends Activity
     public boolean onOptionsItemSelected(MenuItem item)
     {
         super.onOptionsItemSelected(item);
-
         /* a switch case for the item selected from the menu. */
         switch(item.getItemId())
         {
@@ -59,22 +62,41 @@ public class InitialActivity extends Activity
                 break;
 
             case R.id.action_slide2:
-                Intent intent = new Intent(this, Slide2Activity.class);
-                startActivity(intent);
-                finish();
+                if (!SoundModule.playing) // if the audio is not playing then the next method can work
+                {
+                    Intent intent = new Intent(this, Slide2Activity.class);
+                    startActivity(intent);
+                    finish();
+                }
                 break;
 
             case R.id.action_slide3:
-                Toast.makeText(getBaseContext(), "You selected slide 3", Toast.LENGTH_SHORT).show();
+                if (!SoundModule.playing)
+                {
+                    Intent intent3 = new Intent(this, Slide3Activity.class);
+                    startActivity(intent3);
+                    finish();
+                }
                 break;
 
             case R.id.action_slide4:
-                Toast.makeText(getBaseContext(), "You selected slide 4", Toast.LENGTH_SHORT).show();
+                if (!SoundModule.playing)
+                {
+                    Intent intent4 = new Intent(this, Slide4Activity.class);
+                    startActivity(intent4);
+                    finish();
+                }
                 break;
 
             case R.id.action_slide5:
-                Toast.makeText(getBaseContext(), "You selected slide 5", Toast.LENGTH_SHORT).show();
+                if (!SoundModule.playing)
+                {
+                    Intent intent5 = new Intent(this, Slide5Activity.class);
+                    startActivity(intent5);
+                    finish();
+                }
                 break;
+
             default:
                 return super.onOptionsItemSelected(item);
         }
