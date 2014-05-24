@@ -59,7 +59,9 @@ public class InitialActivity extends Activity
                 break;
 
             case R.id.action_slide2:
-                Toast.makeText(getBaseContext(), "You selected slide 2", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(this, Slide2Activity.class);
+                startActivity(intent);
+                finish();
                 break;
 
             case R.id.action_slide3:
