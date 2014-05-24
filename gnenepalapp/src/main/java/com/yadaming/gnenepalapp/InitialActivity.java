@@ -57,15 +57,20 @@ public class InitialActivity extends Activity
         /* a switch case for the item selected from the menu. */
         switch(item.getItemId())
         {
-            case R.id.action_settings:
-                Toast.makeText(getBaseContext(), "You selected settings!", Toast.LENGTH_SHORT).show();
+            case R.id.action_slide1:
+                if (!SoundModule.playing) // if the audio is not playing then the next method can work
+                {
+                    Intent intent1 = new Intent(this, InitialActivity.class);
+                    startActivity(intent1);
+                    finish();
+                }
                 break;
 
             case R.id.action_slide2:
                 if (!SoundModule.playing) // if the audio is not playing then the next method can work
                 {
-                    Intent intent = new Intent(this, Slide2Activity.class);
-                    startActivity(intent);
+                    Intent intent2 = new Intent(this, Slide2Activity.class);
+                    startActivity(intent2);
                     finish();
                 }
                 break;
