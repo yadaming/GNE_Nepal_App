@@ -42,6 +42,7 @@ public class Slide29Activity extends Activity {
         }
     }
 
+    // opens up slide 30
     public void nextMethodSL29(View view) {
         if (SoundModule.playing == false) {
             Intent intent = new Intent(this, Slide30Activity.class);
@@ -50,6 +51,11 @@ public class Slide29Activity extends Activity {
         }
     }
 
+    /*
+        play second audio file that is meant to be played after the
+        person makes their selection
+        I Think
+    */
     public void right1SL29(View view) {
         if (SoundModule.playing == false) {
             ImageView SL29gold1;
@@ -60,6 +66,10 @@ public class Slide29Activity extends Activity {
         }
     }
 
+    /*
+        play third audio when they push the button again
+        I'm pretty sure this is what they want
+     */
     public void right2SL29(View view) {
         if (SoundModule.playing == false) {
             ImageView SL29gold2;
@@ -74,7 +84,7 @@ public class Slide29Activity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_slide29);
-        SoundModule.play(R.raw.vrp_slide29_updated);
+        SoundModule.play(R.raw.vrp_slide29_updatedproperactual);
     }
 
     @Override
