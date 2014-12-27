@@ -1,18 +1,21 @@
 package com.yadaming.gnenepalapp;
 
-import android.support.v7.app.ActionBarActivity;
-import android.support.v7.app.ActionBar;
-import android.support.v4.app.Fragment;
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
+import android.support.v7.app.ActionBarActivity;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-import android.os.Build;
+import android.widget.CheckBox;
+import android.widget.Button;
 
 
 public class MainActivity extends ActionBarActivity {
+
+    Button writebutton;
+    CheckBox checkBox;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +26,11 @@ public class MainActivity extends ActionBarActivity {
                     .add(R.id.container, new PlaceholderFragment())
                     .commit();
         }
+        String filename = "testFile";
+        checkBox = (CheckBox)findViewById(R.id.checkBox);
+        writebutton = (Button)findViewById(R.id.button);
+
+
     }
 
 
