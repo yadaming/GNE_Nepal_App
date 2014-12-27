@@ -16,6 +16,7 @@ public class MainActivity extends ActionBarActivity {
 
     Button writebutton;
     CheckBox checkBox;
+
     String filename = "testFile";
     String filecontent = "filecontent variable not yet changed";
 
@@ -41,7 +42,7 @@ public class MainActivity extends ActionBarActivity {
                     String filecontent = "not checked";
                 }
                 fileIO fileio = new fileIO();
-                fileIO.write(filename, filecontent);
+                fileio.write(filename, filecontent);
             }
         });
     }
@@ -78,8 +79,9 @@ public class MainActivity extends ActionBarActivity {
         }
 
         @Override
-        public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                                 Bundle savedInstanceState) {
+        public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+            //To draw a UI for your fragment, you must return a View from this
+            // method that is the root of your fragment's layout.
             View rootView = inflater.inflate(R.layout.fragment_main, container, false);
             return rootView;
         }

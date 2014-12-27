@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/GNENepalApp.iml" filepath="$PROJECT_DIR$/GNENepalApp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/GNE_Nepal_App.iml" filepath="$PROJECT_DIR$/GNE_Nepal_App.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>

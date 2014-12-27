@@ -20,17 +20,32 @@ public class fileIO {
 
     public Boolean write(String filename, String filecontent) {
         try {
-            String filepath = Environment.getExternalStorageDirectory().getPath() + filename + ".txt";
-            File file = new File(filepath);
-            if (!file.exists()) {
+            //
+            //String filepath = Environment.getExternalStorageDirectory().getPath() + filename + ".txt";
+
+            // Try getting the filepath of the downloads directory
+            File path = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS);
+
+            //File file = new File(filepath);
+            String data_filename = filename + ".txt";
+            File file = new File(path, data_filename);
+
+            if (!file.exists())
+            {
+                // createNewFile returns a public boolean that we don't care about
                 file.createNewFile();
             }
+
             FileWriter filewriter = new FileWriter(file.getAbsoluteFile());
+
             BufferedWriter bufferwriter = new BufferedWriter(filewriter);
             bufferwriter.write(filecontent);
             bufferwriter.close();
+
             Log.d("Written Success", "Written Success");
+
             return true;
+
         } catch (IOException exception) {
             exception.printStackTrace();
             return false;
