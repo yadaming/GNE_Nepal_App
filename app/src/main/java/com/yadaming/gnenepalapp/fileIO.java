@@ -18,7 +18,7 @@ public class fileIO {
     public fileIO() {
     }
 
-    public static Boolean write(String filename, String filecontent) {
+    public Boolean write(String filename, String filecontent) {
         try {
             String filepath = Environment.getExternalStorageDirectory().getPath() + filename + ".txt";
             File file = new File(filepath);
