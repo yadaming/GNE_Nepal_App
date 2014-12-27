@@ -8,14 +8,16 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.CheckBox;
 import android.widget.Button;
+import android.widget.CheckBox;
 
 
 public class MainActivity extends ActionBarActivity {
 
     Button writebutton;
     CheckBox checkBox;
+    String filename = "testFile";
+    String filecontent = "filecontent variable not yet changed";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,11 +28,22 @@ public class MainActivity extends ActionBarActivity {
                     .add(R.id.container, new PlaceholderFragment())
                     .commit();
         }
-        String filename = "testFile";
-        checkBox = (CheckBox)findViewById(R.id.checkBox);
-        writebutton = (Button)findViewById(R.id.button);
-
-
+        // first, connect the checkbox and button in the layout to something usable here
+        checkBox = (CheckBox) findViewById(R.id.checkBox);
+        writebutton = (Button) findViewById(R.id.button);
+        // when the button is clicked, check to see if the box is
+        writebutton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View arg0) {
+                if (checkBox.isChecked()) {
+                    String filecontent = "checked";
+                } else {
+                    String filecontent = "not checked";
+                }
+                fileIO fileio = new fileIO();
+                fileIO.write(filename, filecontent);
+            }
+        });
     }
 
 
