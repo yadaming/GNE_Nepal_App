@@ -8,157 +8,138 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="com.yadaming.gnenepalapp.InitialActivity"
-            android:screenOrientation="portrait"
-            android:label="@string/app_name" >
+            android:name=".InitialActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
-            android:name="com.yadaming.gnenepalapp.Slide2Activity"
+            android:name=".Slide2Activity"
             android:label="@string/title_activity_slide2"
-            android:screenOrientation="portrait"
-            >
+            android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name="com.yadaming.gnenepalapp.Slide3Activity"
+            android:name=".Slide3Activity"
             android:label="@string/title_activity_slide3"
-            android:screenOrientation="portrait"
-            >
+            android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name="com.yadaming.gnenepalapp.Slide4Activity"
+            android:name=".Slide4Activity"
             android:label="@string/title_activity_slide4"
-            android:screenOrientation="portrait"
-            >
+            android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name="com.yadaming.gnenepalapp.Slide5Activity"
+            android:name=".Slide5Activity"
             android:label="@string/title_activity_slide5"
-            android:screenOrientation="portrait"
-            >
+            android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name="com.yadaming.gnenepalapp.Slide6Activity"
+            android:name=".Slide6Activity"
             android:label="@string/title_activity_slide6"
-            android:screenOrientation="portrait"
-            >
+            android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name="com.yadaming.gnenepalapp.Slide7Activity"
+            android:name=".Slide7Activity"
             android:label="@string/title_activity_slide7"
-            android:screenOrientation="portrait"
-            >
+            android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name="com.yadaming.gnenepalapp.Slide8Activity"
+            android:name=".Slide8Activity"
             android:label="@string/title_activity_slide8"
-            android:screenOrientation="portrait"
-            >
+            android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name="com.yadaming.gnenepalapp.Slide12Activity"
+            android:name=".Slide12Activity"
             android:label="@string/title_activity_slide12"
-            android:screenOrientation="portrait"
-            >
+            android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name="com.yadaming.gnenepalapp.Slide14Activity"
+            android:name=".Slide14Activity"
             android:label="@string/title_activity_slide14"
-            android:screenOrientation="portrait"
-            >
+            android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name="com.yadaming.gnenepalapp.Slide15Activity"
+            android:name=".Slide15Activity"
             android:label="@string/title_activity_slide15"
-            android:screenOrientation="portrait"
-            >
+            android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name="com.yadaming.gnenepalapp.Slide16Activity"
+            android:name=".Slide16Activity"
             android:label="@string/title_activity_slide16"
-            android:screenOrientation="portrait"
-            >
+            android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name="com.yadaming.gnenepalapp.Slide17Activity"
+            android:name=".Slide17Activity"
             android:label="@string/title_activity_slide17"
-            android:screenOrientation="portrait"
-            >
+            android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name="com.yadaming.gnenepalapp.Slide18Activity"
+            android:name=".Slide18Activity"
             android:label="@string/title_activity_slide18"
-            android:screenOrientation="portrait"
-            >
+            android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name="com.yadaming.gnenepalapp.Slide19Activity"
+            android:name=".Slide19Activity"
             android:label="@string/title_activity_slide19"
-            android:screenOrientation="portrait"
-            >
+            android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name="com.yadaming.gnenepalapp.Slide20Activity"
+            android:name=".Slide20Activity"
             android:label="@string/title_activity_slide20"
-            android:screenOrientation="portrait"
-            >
+            android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name="com.yadaming.gnenepalapp.Slide22Activity"
+            android:name=".Slide22Activity"
             android:label="@string/title_activity_slide22"
-            android:screenOrientation="portrait"
-            >
+            android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name="com.yadaming.gnenepalapp.Slide23Activity"
+            android:name=".Slide23Activity"
             android:label="@string/title_activity_slide23"
-            android:screenOrientation="portrait"
-            >
+            android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name="com.yadaming.gnenepalapp.Slide24Activity"
+            android:name=".Slide24Activity"
             android:label="@string/title_activity_slide24"
-            android:screenOrientation="portrait"
-            >
+            android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name="com.yadaming.gnenepalapp.Slide25Activity"
+            android:name=".Slide25Activity"
             android:label="@string/title_activity_slide25"
-            android:screenOrientation="portrait"
-            >
+            android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name="com.yadaming.gnenepalapp.Slide26Activity"
+            android:name=".Slide26Activity"
             android:label="@string/title_activity_slide26"
-            android:screenOrientation="portrait"
-            >
+            android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name="com.yadaming.gnenepalapp.Slide27Activity"
+            android:name=".Slide27Activity"
             android:label="@string/title_activity_slide27"
-            android:screenOrientation="portrait"
-            >
+            android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name="com.yadaming.gnenepalapp.Slide28Activity"
+            android:name=".Slide28Activity"
             android:label="@string/title_activity_slide28"
-            android:screenOrientation="portrait"
-            >
+            android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name="com.yadaming.gnenepalapp.Slide29Activity"
+            android:name=".Slide29Activity"
             android:label="@string/title_activity_slide29"
-            android:screenOrientation="portrait"
-            >
+            android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name="com.yadaming.gnenepalapp.Slide30Activity"
+            android:name=".Slide30Activity"
             android:label="@string/title_activity_slide30"
-            android:screenOrientation="portrait"
-            >
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".testActivity"
+            android:label="@string/title_activity_test" >
         </activity>
     </application>
 

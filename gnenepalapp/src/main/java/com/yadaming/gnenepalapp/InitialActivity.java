@@ -20,7 +20,7 @@ public class InitialActivity extends Activity
     {
         if (!SoundModule.playing) // if the audio is not playing then the next method can work
         {
-            Intent intent = new Intent(this, Slide2Activity.class);
+            Intent intent = new Intent(this, testActivity.class);
             startActivity(intent);
             finish();
         }
