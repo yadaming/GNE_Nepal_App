@@ -27,13 +27,17 @@ public class testActivity extends Activity {
         checkBox = (CheckBox) findViewById(R.id.checkBox11);
         writeButton = (Button) findViewById(R.id.button);
         // when the button is clicked, check to see if the box is
-        writeButton.setOnClickListener(new View.OnClickListener() {
+        writeButton.setOnClickListener(new View.OnClickListener()
+        {
             @Override
             public void onClick(View arg0) {
-                if (checkBox.isChecked()) {
-                    String filecontent = "checked";
-                } else {
-                    String filecontent = "not checked";
+                if (checkBox.isChecked())
+                {
+                    filecontent = "checked";
+                }
+                else
+                {
+                    filecontent = "not checked";
                 }
                 fileIO fileio = new fileIO();
                 fileio.write(filename, filecontent);

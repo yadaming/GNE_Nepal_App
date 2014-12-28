@@ -20,7 +20,6 @@ public class fileIO {
 
     public Boolean write(String filename, String filecontent) {
         try {
-            //
             //String filepath = Environment.getExternalStorageDirectory().getPath() + filename + ".txt";
 
             // Try getting the filepath of the downloads directory
@@ -36,10 +35,15 @@ public class fileIO {
                 file.createNewFile();
             }
 
-            FileWriter filewriter = new FileWriter(file.getAbsoluteFile());
+            // get the file to write to from the file path
+            FileWriter filewriter = new FileWriter(file.getAbsoluteFile(), true);
 
             BufferedWriter bufferwriter = new BufferedWriter(filewriter);
-            bufferwriter.write(filecontent);
+            filecontent = filecontent+"\n";
+            bufferwriter.append(filecontent);
+
+            // close the buffer for the buffer writer
+            // TODO do we need to close the file?
             bufferwriter.close();
 
             Log.d("Written Success", "Written Success");
