@@ -110,13 +110,13 @@ public class Slide12Activity extends Activity {
             SoundModule.play(R.raw.vrp_slide13);
         }
         if (clickedNum == 1) {
-            foodTouch();
+            foodTouch(view);
         }
         clickedNum = 1;
     }
 
-    public void foodTouch() {
-        if (SoundModule.playing == false) {
+    public void foodTouch(View view) {
+        if (!SoundModule.playing) {
             Intent intent = new Intent(this, Slide14Activity.class);
             startActivity(intent);
             finish();
