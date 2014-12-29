@@ -12,7 +12,7 @@
         android:layout_height="0dp"
         android:layout_weight="0.5"
         android:onClick="foodTouch"
-        android:src="@drawable/slide_12_13" />
+        android:src="@drawable/slide_12_with_numbers" />
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -84,13 +84,6 @@
         android:layout_height="wrap_content"
         android:onClick="cb8"
         android:text="10" />
-
-    <CheckBox
-        android:id="@+id/checkBox3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:onClick="cb9"
-        android:text="11" />
 
     <Button
         android:id="@+id/yesButton"
