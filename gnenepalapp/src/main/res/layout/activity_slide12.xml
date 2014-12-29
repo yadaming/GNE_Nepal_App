@@ -24,7 +24,7 @@
         android:id="@+id/checkBox4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:visibility="invisible" />
+        android:onClick="cb10" />
 
     <CheckBox
         android:id="@+id/checkBox"
@@ -79,12 +79,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="cb9" />
-
-    <CheckBox
-        android:id="@+id/realcheckBox4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:onClick="cb10" />
 
     <Button
         android:id="@+id/yesButton"
