@@ -23,7 +23,6 @@
         android:id="@+id/greensCheckBox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="greens"
         android:text="1"
         android:paddingRight="20dp" />
 
@@ -31,7 +30,6 @@
         android:id="@+id/oilsCheckbox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="oils"
         android:text="2"
         android:paddingRight="20dp" />
 
@@ -39,7 +37,6 @@
         android:id="@+id/cauliflowerCheckbox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="cauliflower"
         android:text="3"
         android:paddingRight="20dp" />
 
@@ -47,7 +44,6 @@
         android:id="@+id/onionCheckbox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="onion"
         android:text="4"
         android:paddingRight="20dp" />
 
@@ -55,7 +51,6 @@
         android:id="@+id/mangoCheckBox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="mango"
         android:text="5"
         android:paddingRight="20dp" />
 
@@ -63,7 +58,6 @@
         android:id="@+id/carrotCheckBox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="carrot"
         android:text="6"
         android:paddingRight="20dp" />
 
@@ -71,7 +65,6 @@
         android:id="@+id/beansCheckBox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="beans"
         android:text="7"
         android:paddingRight="20dp" />
 
@@ -79,7 +72,6 @@
         android:id="@+id/riceCheckBox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="rice"
         android:text="8"
         android:paddingRight="20dp" />
 
@@ -87,7 +79,6 @@
         android:id="@+id/potatoCheckBox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="potato"
         android:text="9"
         android:paddingRight="20dp" />
 
@@ -95,7 +86,6 @@
         android:id="@+id/herbsCheckBox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="herbs"
         android:text="10"
         android:paddingRight="20dp" />
 
