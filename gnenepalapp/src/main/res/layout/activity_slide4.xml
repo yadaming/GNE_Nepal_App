@@ -24,6 +24,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/next"
-        android:onClick="nextMethodSL4" />
+        android:background="#00ff00"
+        android:onClick="nextMethodSL4"
+    />
 
 </LinearLayout>
