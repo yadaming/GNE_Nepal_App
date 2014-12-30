@@ -12,26 +12,70 @@ import android.widget.Toast;
 
 public class Slide12Activity extends Activity {
 
-    private static int clickedNum = 0;
-
     CheckBox greensCheckBox, oilsCheckBox, cauliflowerCheckBox, onionCheckBox, mangoCheckBox, carrotCheckBox, beansCheckBox, riceCheckBox, potatoCheckBox, herbsCheckBox;
+    String filename = "dataFile";
 
-    public void nextMethodSL12(View view) {
-        if (clickedNum == 0) {
-            SoundModule SoundModule = new SoundModule(this);
-            SoundModule.play(R.raw.vrp_slide13);
+    public void nextMethodSL12(View view)
+    {
+        if (greensCheckBox.isChecked())
+        {
+            String filecontent = "greens";
+            fileIO fileio = new fileIO();
+            fileio.write(filename, filecontent);
         }
-        if (clickedNum == 1) {
-            foodTouch(view);
+        if (oilsCheckBox.isChecked())
+        {
+            String filecontent = "oils";
+            fileIO fileio = new fileIO();
+            fileio.write(filename, filecontent);
         }
-        clickedNum = 1;
-    }
-
-    public void foodTouch(View view) {
-        if (!SoundModule.playing) {
-            Intent intent = new Intent(this, Slide14Activity.class);
-            startActivity(intent);
-            finish();
+        if (cauliflowerCheckBox.isChecked())
+        {
+            String filecontent = "cauliflower";
+            fileIO fileio = new fileIO();
+            fileio.write(filename, filecontent);
+        }
+        if (onionCheckBox.isChecked())
+        {
+            String filecontent = "onion";
+            fileIO fileio = new fileIO();
+            fileio.write(filename, filecontent);
+        }
+        if (mangoCheckBox.isChecked())
+        {
+            String filecontent = "mango";
+            fileIO fileio = new fileIO();
+            fileio.write(filename, filecontent);
+        }
+        if (carrotCheckBox.isChecked())
+        {
+            String filecontent = "carrot";
+            fileIO fileio = new fileIO();
+            fileio.write(filename, filecontent);
+        }
+        if (beansCheckBox.isChecked())
+        {
+            String filecontent = "beans";
+            fileIO fileio = new fileIO();
+            fileio.write(filename, filecontent);
+        }
+        if (riceCheckBox.isChecked())
+        {
+            String filecontent = "rice";
+            fileIO fileio = new fileIO();
+            fileio.write(filename, filecontent);
+        }
+        if (potatoCheckBox.isChecked())
+        {
+            String filecontent = "potato";
+            fileIO fileio = new fileIO();
+            fileio.write(filename, filecontent);
+        }
+        if (herbsCheckBox.isChecked())
+        {
+            String filecontent = "herbs";
+            fileIO fileio = new fileIO();
+            fileio.write(filename, filecontent);
         }
     }
 
