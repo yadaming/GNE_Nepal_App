@@ -12,7 +12,7 @@ import android.widget.Toast;
 public class Rice_main_circled extends Activity {
 
     // next method to call the next slide
-    public void nextMethodSL7(View view) {
+    public void nextMethodRiceMainCircled(View view) {
         if (SoundModule.playing == false) {
             // This sets the Rice_right_circled activity as the next slide to play
             Intent intent = new Intent(this, Rice_right_circled.class);

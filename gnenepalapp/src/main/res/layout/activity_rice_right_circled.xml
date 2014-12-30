@@ -20,5 +20,13 @@
             android:src="@drawable/rice_right_2" />
     </LinearLayout>
 
+    <Button
+        android:id="@+id/yesButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/next"
+        android:background="#00ff00"
+        android:onClick="nextMethodRiceRightCircled"
+    />
 
 </LinearLayout>
