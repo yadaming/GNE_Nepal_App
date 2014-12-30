@@ -15,7 +15,7 @@ public class Rice_none_circled extends Activity {
     // next method to call the next slide
     public void nextMethodRiceNoneCircled(View view) {
         if (SoundModule.playing == false) {
-            // This sets the Rice_none_circled activity as the next slide to play
+            // This sets the Rice_main_circled activity as the next slide to play
             Intent intent = new Intent(this, Rice_main_circled.class);
             startActivity(intent);
             finish();
