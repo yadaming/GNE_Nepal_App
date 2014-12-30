@@ -11,7 +11,6 @@
         android:layout_width="wrap_content"
         android:layout_height="0dp"
         android:layout_weight="0.5"
-        android:onClick="foodTouch"
         android:src="@drawable/slide_12_with_numbers" />
 
     <LinearLayout
@@ -21,72 +20,87 @@
         android:layout_gravity="center_horizontal">
 
     <CheckBox
-        android:id="@+id/checkBox4"
+        android:id="@+id/greensCheckBox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="cb10"
-        android:checked="false"
-        android:text="1" />
+        android:onClick="greens"
+        android:text="1"
+        android:paddingRight="20dp" />
 
     <CheckBox
-        android:id="@+id/checkBox"
+        android:id="@+id/oilsCheckbox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_weight="0.1"
-        android:onClick="cb1"
-        android:text="2" />
+        android:onClick="oils"
+        android:text="2"
+        android:paddingRight="20dp" />
 
     <CheckBox
-        android:id="@+id/checkBox6"
+        android:id="@+id/cauliflowerCheckbox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="cb2"
-        android:text="3" />
+        android:onClick="cauliflower"
+        android:text="3"
+        android:paddingRight="20dp" />
 
     <CheckBox
-        android:id="@+id/checkBox9"
+        android:id="@+id/onionCheckbox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="cb3"
-        android:text="4" />
+        android:onClick="onion"
+        android:text="4"
+        android:paddingRight="20dp" />
 
     <CheckBox
-        android:id="@+id/checkBox2"
+        android:id="@+id/mangoCheckBox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="cb4"
-        android:text="5" />
+        android:onClick="mango"
+        android:text="5"
+        android:paddingRight="20dp" />
 
     <CheckBox
-        android:id="@+id/checkBox10"
+        android:id="@+id/carrotCheckBox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="cb5"
-        android:text="6" />
+        android:onClick="carrot"
+        android:text="6"
+        android:paddingRight="20dp" />
 
     <CheckBox
-        android:id="@+id/checkBox8"
+        android:id="@+id/beansCheckBox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="cb6"
-        android:text="7" />
+        android:onClick="beans"
+        android:text="7"
+        android:paddingRight="20dp" />
 
     <CheckBox
-        android:id="@+id/checkBox7"
+        android:id="@+id/riceCheckBox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="cb7"
-        android:text="9" />
+        android:onClick="rice"
+        android:text="8"
+        android:paddingRight="20dp" />
 
     <CheckBox
-        android:id="@+id/checkBox5"
+        android:id="@+id/potatoCheckBox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="cb8"
-        android:text="10" />
+        android:onClick="potato"
+        android:text="9"
+        android:paddingRight="20dp" />
+
+    <CheckBox
+        android:id="@+id/herbsCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="herbs"
+        android:text="10"
+        android:paddingRight="20dp" />
 
     <Button
-        android:id="@+id/yesButton"
+        android:id="@+id/nextButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="16dp"
