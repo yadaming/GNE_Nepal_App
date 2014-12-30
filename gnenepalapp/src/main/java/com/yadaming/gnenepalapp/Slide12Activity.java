@@ -85,6 +85,16 @@ public class Slide12Activity extends Activity {
         setContentView(R.layout.activity_slide12);
         SoundModule SoundModule = new SoundModule(this);
         SoundModule.play(R.raw.vrp_slide12);
+        greensCheckBox = (CheckBox) findViewById(R.id.greensCheckBox);
+        oilsCheckBox = (CheckBox) findViewById(R.id.oilsCheckbox);
+        cauliflowerCheckBox = (CheckBox) findViewById(R.id.cauliflowerCheckbox);
+        mangoCheckBox = (CheckBox) findViewById(R.id.mangoCheckBox);
+        carrotCheckBox = (CheckBox) findViewById(R.id.carrotCheckBox);
+        beansCheckBox = (CheckBox) findViewById(R.id.beansCheckBox);
+        riceCheckBox = (CheckBox) findViewById(R.id.riceCheckBox);
+        potatoCheckBox = (CheckBox) findViewById(R.id.potatoCheckBox);
+        herbsCheckBox = (CheckBox) findViewById(R.id.herbsCheckBox);
+        onionCheckBox = (CheckBox) findViewById(R.id.onionCheckbox);
     }
 
     @Override
