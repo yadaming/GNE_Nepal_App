@@ -9,13 +9,15 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
 
-public class Slide7Activity extends Activity {
+
+public class Rice_right_circled extends Activity {
 
     // next method to call the next slide
-    public void nextMethodSL7(View view) {
+    public void nextMethodRiceRightCircled(View view) {
         if (SoundModule.playing == false) {
-            // This sets the Rice_none_circled activity as the next slide to play
-            Intent intent = new Intent(this, Rice_none_circled.class);
+            // This sets the slide 8 activity (which could have alternatively been named the Rice_top_circled activity)
+            // as the next slide to play
+            Intent intent = new Intent(this, Slide8Activity.class);
             startActivity(intent);
             finish();
         }
@@ -24,10 +26,11 @@ public class Slide7Activity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_slide7);
+        setContentView(R.layout.activity_rice_right_circled);
         SoundModule SoundModule = new SoundModule(this);
-        SoundModule.play(R.raw.vrp_slide7);
+        SoundModule.play(R.raw.slide_9);
     }
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu)
@@ -37,6 +40,7 @@ public class Slide7Activity extends Activity {
         inflater.inflate(R.menu.initial, menu);
         return super.onCreateOptionsMenu(menu);
     }
+
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item)
