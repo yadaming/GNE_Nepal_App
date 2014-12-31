@@ -9,10 +9,10 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
 
-public class Iodine extends Activity
-{
+public class Folate extends Activity {
+
     // next method to call the next slide
-    public void nextMethodIodine(View view)
+    public void nextMethodFolate(View view)
     {
         if (!SoundModule.playing)
         {
@@ -26,9 +26,9 @@ public class Iodine extends Activity
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_iodine);
+        setContentView(R.layout.activity_folate);
         SoundModule SoundModule = new SoundModule(this);
-        SoundModule.play(R.raw.slide_16);
+        SoundModule.play(R.raw.slide_17);
     }
 
     @Override

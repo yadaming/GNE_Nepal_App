@@ -175,6 +175,10 @@
             android:name=".Iodine"
             android:label="@string/title_activity_iodine" >
         </activity>
+        <activity
+            android:name=".Folate"
+            android:label="@string/title_activity_folate" >
+        </activity>
     </application>
 
 </manifest>
