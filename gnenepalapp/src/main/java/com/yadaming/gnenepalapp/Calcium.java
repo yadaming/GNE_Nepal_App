@@ -9,14 +9,14 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
 
-public class Iron extends Activity
-{
+public class Calcium extends Activity {
+
     // next method to call the next slide
-    public void nextMethodIron(View view)
+    public void nextMethodCalcium(View view)
     {
         if (!SoundModule.playing)
         {
-            Intent intent = new Intent(this, Calcium.class);
+            Intent intent = new Intent(this, Folate.class);
             startActivity(intent);
             finish();
         }
@@ -26,9 +26,9 @@ public class Iron extends Activity
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_iron);
+        setContentView(R.layout.activity_calcium);
         SoundModule SoundModule = new SoundModule(this);
-        SoundModule.play(R.raw.slide_14);
+        SoundModule.play(R.raw.slide_15);
     }
 
     @Override
