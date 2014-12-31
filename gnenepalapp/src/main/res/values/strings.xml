@@ -33,9 +33,9 @@
     <string name="title_activity_slide29">Slide 29</string>
     <string name="title_activity_slide30">Slide 30</string>
     <string name="title_activity_test">testActivity</string>
-    <string name="title_activity_rice_none_circled">Rice_none_circled</string>
-    <string name="title_activity_rice_main_circled">Rice_main_circled</string>
-    <string name="title_activity_rice_right_circled">Rice_right_circled</string>
+    <string name="title_activity_rice_none_circled">Slide 8</string>
+    <string name="title_activity_rice_main_circled">Slide 9</string>
+    <string name="title_activity_rice_right_circled">Slide 10</string>
     <string name="title_activity_vitamin">Vitamin</string>
 
 </resources>
