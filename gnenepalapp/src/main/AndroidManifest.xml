@@ -155,6 +155,10 @@
             android:name=".Rice_right_circled"
             android:label="@string/title_activity_rice_right_circled" >
         </activity>
+        <activity
+            android:name=".Vitamin"
+            android:label="@string/title_activity_vitamin" >
+        </activity>
     </application>
 
 </manifest>
