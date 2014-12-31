@@ -14,7 +14,7 @@ public class Vitamin extends Activity {
     public void nextMethodVitamin(View view) {
         if (!SoundModule.playing) {
             // This sets the Rice_right_circled activity as the next slide to play
-            Intent intent = new Intent(this, Vitamin_A.class);
+            Intent intent = new Intent(this, VitaminA.class);
             startActivity(intent);
             finish();
         }

@@ -116,7 +116,7 @@
             android:layout_height="match_parent"
             android:src="@drawable/yes"
             android:background="#00FF00"
-            android:onClick="nextMethodVitamin"
+            android:onClick="nextMethodVitaminA"
             />
     </LinearLayout>
 
