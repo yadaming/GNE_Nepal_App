@@ -171,6 +171,10 @@
             android:name=".Calcium"
             android:label="@string/title_activity_calcium" >
         </activity>
+        <activity
+            android:name=".Iodine"
+            android:label="@string/title_activity_iodine" >
+        </activity>
     </application>
 
 </manifest>
