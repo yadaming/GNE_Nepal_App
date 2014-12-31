@@ -159,6 +159,10 @@
             android:name=".Vitamin"
             android:label="@string/title_activity_vitamin" >
         </activity>
+        <activity
+            android:name=".VitaminA"
+            android:label="@string/title_activity_vitamin" >
+        </activity>
     </application>
 
 </manifest>
