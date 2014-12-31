@@ -12,7 +12,7 @@ import android.widget.Toast;
 public class Vitamin extends Activity {
     // next method to call the next slide
     public void nextMethodVitamin(View view) {
-        if (SoundModule.playing == false) {
+        if (!SoundModule.playing) {
             // This sets the Rice_right_circled activity as the next slide to play
             Intent intent = new Intent(this, Vitamin_A.class);
             startActivity(intent);
