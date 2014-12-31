@@ -9,28 +9,28 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
 
-public class VitaminA extends Activity {
-
+public class Iron extends Activity
+{
     // next method to call the next slide
-    public void nextMethodVitaminA(View view)
+    public void nextMethodIron(View view)
     {
         if (!SoundModule.playing)
         {
             // This sets the Rice_right_circled activity as the next slide to play
-            Intent intent = new Intent(this, Iron.class);
+            Intent intent = new Intent(this, .class);
             startActivity(intent);
             finish();
         }
     }
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState)
+    {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_vitamin2);
+        setContentView(R.layout.activity_iron);
         SoundModule SoundModule = new SoundModule(this);
-        SoundModule.play(R.raw.slide_13);
+        SoundModule.play(R.raw.slide_14);
     }
-
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu)
@@ -40,7 +40,6 @@ public class VitaminA extends Activity {
         inflater.inflate(R.menu.initial, menu);
         return super.onCreateOptionsMenu(menu);
     }
-
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item)
