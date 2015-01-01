@@ -25,7 +25,10 @@ public class Slide5Activity extends Activity {
 
     public void noMethodSL5(View view) {
         if (SoundModule.playing == false) {
-            ScoreKeeper.sl5 = 1;
+            fileIO filio = new fileIO();
+            String filename = "dataFile";
+            String filecontent = "slide 4 no";
+            filio.write(filename, filecontent);
             Intent intent = new Intent(this, Slide6Activity.class);
             startActivity(intent);
             finish();
@@ -38,7 +41,7 @@ public class Slide5Activity extends Activity {
         setContentView(R.layout.activity_slide5);
         SoundModule SoundModule = new SoundModule(this);
         SoundModule.play(R.raw.slide_4);
-        while(!SoundModule.playing){}   // wait :)
+        while(!SoundModule.playing){}   // TODO make this work
         SoundModule.play(R.raw.slide_4_question);
     }
 
