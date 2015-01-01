@@ -11,8 +11,12 @@ import android.widget.Toast;
 
 public class Slide19Activity extends Activity {
 
-    public void nextMethodSL19(View view) {
-        if (SoundModule.playing == false) {
+    int count = 0;
+
+    public void nextMethodSL19(View view)
+    {
+        if (SoundModule.playing == false)
+        {
             Intent intent = new Intent(this, Slide20Activity.class);
             startActivity(intent);
             finish();
@@ -20,11 +24,13 @@ public class Slide19Activity extends Activity {
     }
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState)
+    {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_slide19);
         SoundModule SoundModule = new SoundModule(this);
-        SoundModule.play(R.raw.vrp_slide19);
+        SoundModule.play(R.raw.slide_19);
+        ++count;
     }
 
     @Override

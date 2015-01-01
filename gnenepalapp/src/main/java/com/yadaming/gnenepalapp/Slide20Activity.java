@@ -12,15 +12,19 @@ import android.widget.Toast;
 
 public class Slide20Activity extends Activity {
 
-    public void choseBrown(View view) {
+    public void choseBrown(View view)
+    {
+        // This function should make the green check visible when clicked
         ScoreKeeper.correct = ScoreKeeper.correct + 1;
         ImageView goldSL20;
         goldSL20 = (ImageView) findViewById(R.id.imageView2);
         goldSL20.setVisibility(View.VISIBLE);
     }
 
-    public void nextMethodSL20(View view) {
-        if (SoundModule.playing == false) {
+    public void nextMethodSL20(View view)
+    {
+        if (!SoundModule.playing)
+        {
             Intent intent = new Intent(this, Slide22Activity.class);
             startActivity(intent);
             finish();
@@ -28,22 +32,12 @@ public class Slide20Activity extends Activity {
     }
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState)
+    {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_slide20);
         SoundModule SoundModule = new SoundModule(this);
-        SoundModule.play(R.raw.vrp_slide20);
-
-        //final ImageButton goldenstar;
-        //goldenstar = (ImageButton) findViewById(R.id.imageView2);
-        //goldenstar.setOnClickListener(new View.OnClickListener() {
-        //@Override
-        //public void onClick(View v) {
-        //goldenstar.setVisibility(View.VISIBLE);
-
-        //}
-        //});
-
+        SoundModule.playsound(R.raw.slide_19);
     }
 
     @Override

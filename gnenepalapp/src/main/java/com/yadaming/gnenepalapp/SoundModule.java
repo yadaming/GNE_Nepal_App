@@ -29,6 +29,20 @@ public class SoundModule {
         });
     }
 
+    public boolean playsound(int soundToPlay) {
+        playing = true;
+        //MediaPlayer mMediaPlayer = MediaPlayer.create(c, soundToPlay);
+        mMediaPlayer = MediaPlayer.create(c, soundToPlay);
+        mMediaPlayer.start();
+        mMediaPlayer.setOnCompletionListener(new OnCompletionListener() {
+            @Override
+            public void onCompletion(MediaPlayer mp) {
+                playing = false;
+            }
+        });
+        return true;
+    }
+
     public void stop(int soundToPlay)
     {
         mMediaPlayer.stop();

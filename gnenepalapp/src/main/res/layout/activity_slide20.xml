@@ -15,36 +15,71 @@
         android:layout_weight="1"
         android:orientation="vertical">
 
-    <ImageView
-        android:id="@+id/imageView1"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
-        android:src="@drawable/slide20white" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:height="40dp"
+            android:textSize="30sp"
+            android:paddingLeft="150dp"
+            android:text="ऩौन्ष्टक खाना य शबटाशभनरे ववशबन्न "
+            />
 
-    <ImageButton
-        android:id="@+id/foodpic"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
-        android:src="@drawable/slide20brown"
-        android:onClick="choseBrown" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:height="40dp"
+            android:textSize="30sp"
+            android:paddingLeft="150dp"
+            android:text="योगहरुको योकथाभ गनछ सककन्ि "
+            />
 
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
-        android:src="@drawable/gold_star"
-        android:visibility="invisible" />
-    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/slide20white"
+            android:onClick="choseWhite"/>
+        <ImageView
+            android:id="@+id/foodpic"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/slide20brown"
+            android:onClick="choseBrown" />
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/green_check"
+            android:visibility="invisible" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:height="40dp"
+            android:textSize="30sp"
+            android:paddingLeft="150dp"
+            android:text="यातो चाभर सेतो चाभरबन्दा दोब्फय ऩोवषरो हुन्ि "
+        />
+
 
     <Button
-        android:id="@+id/yesButton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="19dp"
-        android:text="@string/next"
-        android:onClick="nextMethodSL20" />
+            android:id="@+id/yesButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="19dp"
+            android:text="@string/next"
+            android:onClick="nextMethodSL20"
+    />
 
 </LinearLayout>

@@ -36,17 +36,17 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:src="@drawable/PEANUTS"/>
+            android:src="@drawable/peanuts"/>
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:src="@drawable/MEAT"/>
+            android:src="@drawable/meat"/>
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:src="@drawable/PEAS"/>
+            android:src="@drawable/peas"/>
     </LinearLayout>
 
     <TextView
@@ -67,17 +67,17 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:src="@drawable/LETTUCE"/>
+            android:src="@drawable/lettuce_1"/>
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:src="@drawable/CASHEWS"/>
+            android:src="@drawable/cashews"/>
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:src="@drawable/BROC"/>
+            android:src="@drawable/broc"/>
     </LinearLayout>
 
     <TextView
