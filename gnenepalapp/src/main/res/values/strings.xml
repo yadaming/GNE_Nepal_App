@@ -41,5 +41,6 @@
     <string name="title_activity_calcium">Calcium</string>
     <string name="title_activity_iodine">Iodine</string>
     <string name="title_activity_folate">Folate</string>
+    <string name="title_activity_cooking">Cooking</string>
 
 </resources>

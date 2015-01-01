@@ -9,14 +9,14 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
 
-public class Folate extends Activity {
+public class Cooking extends Activity {
 
     // next method to call the next slide
-    public void nextMethodFolate(View view)
+    public void nextMethodCooking(View view)
     {
         if (!SoundModule.playing)
         {
-            Intent intent = new Intent(this, Cooking.class);
+            Intent intent = new Intent(this, Folate.class);
             startActivity(intent);
             finish();
         }
@@ -28,7 +28,7 @@ public class Folate extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_folate);
         SoundModule SoundModule = new SoundModule(this);
-        SoundModule.play(R.raw.slide_17);
+        SoundModule.play(R.raw.slide_18);
     }
 
     @Override

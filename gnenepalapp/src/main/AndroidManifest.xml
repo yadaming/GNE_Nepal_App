@@ -179,6 +179,10 @@
             android:name=".Folate"
             android:label="@string/title_activity_folate" >
         </activity>
+        <activity
+            android:name=".Cooking"
+            android:label="@string/title_activity_cooking" >
+        </activity>
     </application>
 
 </manifest>
