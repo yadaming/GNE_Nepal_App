@@ -13,7 +13,10 @@ public class Slide6Activity extends Activity {
 
     public void yesMethodSL6(View view) {
         if (SoundModule.playing == false) {
-            ScoreKeeper.sl6 = 2;
+            fileIO filio = new fileIO();
+            String filename = "dataFile";
+            String filecontent = "slide 5 yes";
+            filio.write(filename, filecontent);
             Intent intent = new Intent(this, Slide7Activity.class);
             startActivity(intent);
             finish();
@@ -22,7 +25,10 @@ public class Slide6Activity extends Activity {
 
     public void noMethodSL6(View view) {
         if (SoundModule.playing == false) {
-            ScoreKeeper.sl6 = 1;
+            fileIO filio = new fileIO();
+            String filename = "dataFile";
+            String filecontent = "slide 5 no";
+            filio.write(filename, filecontent);
             Intent intent = new Intent(this, Slide7Activity.class);
             startActivity(intent);
             finish();
@@ -35,7 +41,8 @@ public class Slide6Activity extends Activity {
         setContentView(R.layout.activity_slide6);
 
         SoundModule SoundModule = new SoundModule(this);
-        SoundModule.play(R.raw.vrp_slide6_1edited);
+        SoundModule.play(R.raw.slide_5);
+        // TODO interactive question sound
     }
 
     @Override

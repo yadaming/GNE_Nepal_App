@@ -36,7 +36,7 @@ public class InitialActivity extends Activity {
 
         // Play the sound
         SoundModule SoundModule = new SoundModule(this);
-        SoundModule.play(R.raw.vrp_slide1);
+        SoundModule.play(R.raw.slide_1);
 
         DateFormat dateFormatter = new SimpleDateFormat("yyyyMMdd hh:mm:ss");
         dateFormatter.setLenient(false);

@@ -24,7 +24,7 @@ public class Slide4Activity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_slide4);
         SoundModule SoundModule = new SoundModule(this);
-        SoundModule.play(R.raw.vrp_slide4);
+        SoundModule.play(R.raw.slide_3);
     }
 
     @Override

@@ -14,13 +14,12 @@ public class Slide2Activity extends Activity {
     public void noMethod(View view) {
         SoundModule SoundModule = new SoundModule(this);
         if (SoundModule.playing == false) {
-            SoundModule.play(R.raw.vrp_slide2_if_selected_no_then_this_is_played);
+            SoundModule.play(R.raw.slide_2_answer);
         }
     }
 
     public void yesMethod(View view) {
         if (SoundModule.playing == false) {
-            ScoreKeeper.correct = ScoreKeeper.correct + 1;
             Intent intent = new Intent(this, Slide4Activity.class);
             startActivity(intent);
             finish();
@@ -33,7 +32,7 @@ public class Slide2Activity extends Activity {
         setContentView(R.layout.activity_slide2);
 
         SoundModule SoundModule = new SoundModule(this);
-        SoundModule.play(R.raw.vrp_slide2_beginning_part_actual_actual);
+        SoundModule.play(R.raw.slide_2_question);
 
     }
 

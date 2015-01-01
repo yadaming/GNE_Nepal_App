@@ -21,7 +21,8 @@ public class Slide3Activity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_slide3);
-        // there should probably be a sound here
+        SoundModule SoundModule = new SoundModule(this);
+        SoundModule.play(R.raw.slide_3);
     }
 
     @Override
