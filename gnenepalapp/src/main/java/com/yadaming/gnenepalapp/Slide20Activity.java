@@ -28,7 +28,7 @@ public class Slide20Activity extends Activity
 
             // Change the image
             ImageView greenCheck;
-            greenCheck = (ImageView) findViewById(R.id.imageView2);
+            greenCheck = (ImageView) findViewById(R.id.imageView3);
             greenCheck.setVisibility(View.VISIBLE);
         }
     }
