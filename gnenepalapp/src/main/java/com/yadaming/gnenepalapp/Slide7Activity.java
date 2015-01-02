@@ -26,7 +26,7 @@ public class Slide7Activity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_slide7);
         SoundModule SoundModule = new SoundModule(this);
-        SoundModule.play(R.raw.vrp_slide7);
+        SoundModule.play(R.raw.slide_6);
     }
 
     @Override
