@@ -11,51 +11,89 @@ import android.widget.Toast;
 
 public class Slide8Activity extends Activity {
 
-    private static int nextButtonPresses = 0;
+    //TODO add text for "fruits and vegetables" and the Nepali text
 
-    public void playNextSL8(View view) {
-        if (nextButtonPresses == 0) {
-            if (SoundModule.playing == false) {
-                SoundModule SoundModule = new SoundModule(this);
-                SoundModule.play(R.raw.vrp_slide9);
-            }
-        }
-        if (nextButtonPresses == 1) {
-            if (SoundModule.playing == false) {
-                SoundModule SoundModule = new SoundModule(this);
-                SoundModule.play(R.raw.vrp_slide10);
-            }
-        }
-        if (nextButtonPresses == 2) {
-            if (SoundModule.playing == false) {
-                SoundModule SoundModule = new SoundModule(this);
-                SoundModule.play(R.raw.vrp_slide11actual);
-            }
-        }
-        nextButtonPresses = nextButtonPresses + 1;
-    }
-
-    public void zeroToTwo(View view) {
+    public void zeroservs(View view) {
         if (SoundModule.playing == false) {
-            ScoreKeeper.sl8 = 0;
+
+            String filecontent = "slide 10 0 servings";
+            String filename = "dataFile";
+            fileIO fileio = new fileIO();
+            fileio.write(filename, filecontent);
+
             Intent intent = new Intent(this, Slide12Activity.class);
             startActivity(intent);
             finish();
         }
     }
 
-    public void threeToSix(View view) {
+    public void oneserv(View view) {
         if (SoundModule.playing == false) {
-            ScoreKeeper.sl8 = 1;
+
+            String filecontent = "slide 10 1 servings";
+            String filename = "dataFile";
+            fileIO fileio = new fileIO();
+            fileio.write(filename, filecontent);
+
             Intent intent = new Intent(this, Slide12Activity.class);
             startActivity(intent);
             finish();
         }
     }
 
-    public void sevenToNine(View view) {
+    public void twoservs(View view) {
         if (SoundModule.playing == false) {
-            ScoreKeeper.sl8 = 2;
+
+
+            String filecontent = "slide 10 2 servings";
+            String filename = "dataFile";
+            fileIO fileio = new fileIO();
+            fileio.write(filename, filecontent);
+
+            Intent intent = new Intent(this, Slide12Activity.class);
+            startActivity(intent);
+            finish();
+        }
+    }
+
+
+    public void threeservs(View view) {
+        if (SoundModule.playing == false) {
+
+
+            String filecontent = "slide 10 3 servings";
+            String filename = "dataFile";
+            fileIO fileio = new fileIO();
+            fileio.write(filename, filecontent);
+
+            Intent intent = new Intent(this, Slide12Activity.class);
+            startActivity(intent);
+            finish();
+        }
+    }
+    public void fourservs(View view) {
+        if (SoundModule.playing == false) {
+
+
+            String filecontent = "slide 10 4 servings";
+            String filename = "dataFile";
+            fileIO fileio = new fileIO();
+            fileio.write(filename, filecontent);
+
+            Intent intent = new Intent(this, Slide12Activity.class);
+            startActivity(intent);
+            finish();
+        }
+    }
+    public void fiveplusservs(View view) {
+        if (SoundModule.playing == false) {
+
+
+            String filecontent = "slide 10 5+ servings";
+            String filename = "dataFile";
+            fileIO fileio = new fileIO();
+            fileio.write(filename, filecontent);
+
             Intent intent = new Intent(this, Slide12Activity.class);
             startActivity(intent);
             finish();
@@ -67,7 +105,7 @@ public class Slide8Activity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_slide8);
         SoundModule SoundModule = new SoundModule(this);
-        SoundModule.play(R.raw.vrp_slide8);
+        SoundModule.play(R.raw.slide_10_start_and_question);
     }
 
     @Override
