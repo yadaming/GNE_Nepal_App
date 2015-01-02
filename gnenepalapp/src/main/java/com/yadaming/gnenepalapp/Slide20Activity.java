@@ -12,15 +12,40 @@ import android.widget.Toast;
 
 public class Slide20Activity extends Activity {
 
+    /*
+        Function to call when brown rice is selected
+     */
     public void choseBrown(View view)
     {
         // This function should make the green check visible when clicked
-        ScoreKeeper.correct = ScoreKeeper.correct + 1;
-        ImageView goldSL20;
-        goldSL20 = (ImageView) findViewById(R.id.imageView2);
-        goldSL20.setVisibility(View.VISIBLE);
+
+        //ScoreKeeper.correct = ScoreKeeper.correct + 1;
+
+        ImageView greenCheck;
+        greenCheck = (ImageView) findViewById(R.id.imageView2);
+        greenCheck.setVisibility(View.VISIBLE);
     }
 
+    /*
+        Function to call when white rice is selected
+     */
+    public void choseWhite(View view)
+    {
+        // This function should make the green check visible when clicked
+
+        //ScoreKeeper.correct = ScoreKeeper.correct + 1;
+
+        // TODO finish the red x image behavior
+        ImageView redX;
+        redX = (ImageView) findViewById(R.id.imageView2);
+        redX.setVisibility(View.VISIBLE);
+    }
+
+
+    /*
+        For when the next button is clicked - this will start the next
+        activity
+     */
     public void nextMethodSL20(View view)
     {
         if (!SoundModule.playing)
@@ -37,6 +62,7 @@ public class Slide20Activity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_slide20);
         SoundModule SoundModule = new SoundModule(this);
+        // The audio to play for slide 20 is slide_19 because the slide numbers don't match up
         SoundModule.playsound(R.raw.slide_19);
     }
 
