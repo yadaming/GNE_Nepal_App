@@ -9,66 +9,18 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
 
-public class SnackFoodActivity extends Activity {
-
-    /*
-        This function is called if the user selects the button for zero to one
-     */
-    public void zeroToTwo(View view)
-    {
-        if (!SoundModule.playing)
-        {
-            ScoreKeeper.sl23 = 0;
-
-            Intent intent = new Intent(this, Alcohol.class);
-            startActivity(intent);
-            finish();
-        }
-    }
-
-    /*
-        This function is called if the user selects the button for 3 to 6
-    */
-    public void threeToSix(View view)
-    {
-        if (!SoundModule.playing)
-        {
-            ScoreKeeper.sl23 = 1;
-
-            Intent intent = new Intent(this, Alcohol.class);
-            startActivity(intent);
-            finish();
-        }
-    }
-
-    /*
-        This function is called if the user selects the button for more than 6
-    */
-    public void moreThanSix(View view)
-    {
-        if (!SoundModule.playing)
-        {
-            ScoreKeeper.sl23 = 2;
-
-            Intent intent = new Intent(this, Alcohol.class);
-            startActivity(intent);
-            finish();
-        }
-    }
-
-
+public class Alcohol extends Activity
+{
     /*
         This is the next slide button
-        But at present it just plays the question again
-
-        TODO we might want to get rid of this ?
      */
-    public void nextMethodSnackFood(View view)
+    public void nextMethodAlcohol(View view)
     {
         if (!SoundModule.playing)
         {
-            SoundModule soundmodule = new SoundModule(this);
-            soundmodule.play(R.raw.slide_20_question);
+            Intent intent = new Intent(this, Slide24Activity.class);
+            startActivity(intent);
+            finish();
         }
     }
 
@@ -77,11 +29,11 @@ public class SnackFoodActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_snackfood);
+        setContentView(R.layout.activity_alcohol);
 
-        // play the "start and question" sound
+        // play the sound
         SoundModule start_sound = new SoundModule(this);
-        start_sound.play(R.raw.slide_20_start_and_question);
+        start_sound.play(R.raw.slide_21);
     }
 
 

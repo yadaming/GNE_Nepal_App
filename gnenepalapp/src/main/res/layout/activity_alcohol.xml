@@ -1,0 +1,69 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.yadaming.gnenepalapp.Alcohol" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:height="40dp"
+        android:textSize="30sp"
+        android:paddingLeft="150dp"
+        android:textColor="#22316C"
+        android:text="गबछवती भदहरा य आभारे च य ु ोट य यक्सी खाए "
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:height="40dp"
+        android:textSize="30sp"
+        android:paddingLeft="150dp"
+        android:textColor="#22316C"
+        android:text="गबछभा बएको फच्चा य साना फारफाशरकाराई हानी "
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:height="40dp"
+        android:textSize="30sp"
+        android:paddingLeft="350dp"
+        android:textColor="#22316C"
+        android:text="गि "
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="10">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/smoking"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.6"
+            android:src="@drawable/alcohol"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/yesButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="nextMethodAlcohol"
+        android:background="#00ff00"
+        android:layout_weight="1"
+        android:text="@string/next" />
+
+</LinearLayout>

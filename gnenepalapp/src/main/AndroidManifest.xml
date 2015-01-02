@@ -183,6 +183,10 @@
             android:name=".Cooking"
             android:label="@string/title_activity_cooking" >
         </activity>
+        <activity
+            android:name=".Alcohol"
+            android:label="@string/title_activity_alcohol" >
+        </activity>
     </application>
 
 </manifest>
