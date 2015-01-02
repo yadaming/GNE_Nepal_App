@@ -10,35 +10,48 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.Toast;
 
-public class Slide20Activity extends Activity {
-
+public class Slide20Activity extends Activity
+{
     /*
         Function to call when brown rice is selected
+                              -----
      */
     public void choseBrown(View view)
     {
         // This function should make the green check visible when clicked
+        // first check if a sound module is playing or not
+        if (!SoundModule.playing)
+        {
+            // play the sound for brown rice
+            SoundModule rice_sound = new SoundModule(this);
+            rice_sound.playsound(R.raw.slide_19_brown_selected);
 
-        //ScoreKeeper.correct = ScoreKeeper.correct + 1;
-
-        ImageView greenCheck;
-        greenCheck = (ImageView) findViewById(R.id.imageView2);
-        greenCheck.setVisibility(View.VISIBLE);
+            // Change the image
+            ImageView greenCheck;
+            greenCheck = (ImageView) findViewById(R.id.imageView2);
+            greenCheck.setVisibility(View.VISIBLE);
+        }
     }
 
     /*
         Function to call when white rice is selected
+                              -----
      */
     public void choseWhite(View view)
     {
-        // This function should make the green check visible when clicked
+        // This function should make the red "x" visible when clicked
+        // check that no other sound is playing
+        if (!SoundModule.playing)
+        {
+            // play the sound for when white rice is selected
+            SoundModule white_rice_sound = new SoundModule(this);
+            white_rice_sound.play(R.raw.slide_19_white_selected);
 
-        //ScoreKeeper.correct = ScoreKeeper.correct + 1;
-
-        // TODO finish the red x image behavior
-        ImageView redX;
-        redX = (ImageView) findViewById(R.id.imageView2);
-        redX.setVisibility(View.VISIBLE);
+            // TODO finish the red x image behavior
+            ImageView redX;
+            redX = (ImageView) findViewById(R.id.imageView2);
+            redX.setVisibility(View.VISIBLE);
+        }
     }
 
 
@@ -56,15 +69,19 @@ public class Slide20Activity extends Activity {
         }
     }
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_slide20);
+
+        // Create a sound module to play
         SoundModule SoundModule = new SoundModule(this);
         // The audio to play for slide 20 is slide_19 because the slide numbers don't match up
         SoundModule.playsound(R.raw.slide_19);
     }
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu)
