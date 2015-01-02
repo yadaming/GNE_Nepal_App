@@ -9,22 +9,28 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
 
-public class Slide24Activity extends Activity {
-    public void nextMethodSL24(View view) {
-        if (SoundModule.playing == false) {
+public class Slide24Activity extends Activity
+{
+    public void nextMethodSL24(View view)
+    {
+        if (!SoundModule.playing)
+        {
             Intent intent = new Intent(this, Slide25Activity.class);
             startActivity(intent);
             finish();
         }
     }
 
+
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState)
+    {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_slide24);
         SoundModule SoundModule = new SoundModule(this);
-        SoundModule.play(R.raw.vrp_slide24);
+        SoundModule.play(R.raw.slide_22);
     }
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu)

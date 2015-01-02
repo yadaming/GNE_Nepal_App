@@ -11,26 +11,50 @@
               tools:context=".Slide24Activity" >
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="0dip"
-        android:layout_weight="1">
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:height="30dp"
+            android:textSize="25sp"
+            android:paddingLeft="110dp"
+            android:textColor="#22316C"
+            android:text="शबटाशभन चक्की "
+        />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:height="30dp"
+            android:textSize="25sp"
+            android:paddingLeft="310dp"
+            android:textColor="#22316C"
+            android:text="स्वस्थ खाना "
+        />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="10">
         <ImageView
             android:id="@+id/imageView2"
-            android:layout_width="0dip"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:src="@drawable/slide24a" />
-        <ImageView
-            android:id="@+id/imageView1"
-            android:layout_width="0dip"
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:src="@drawable/slide24" />
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/slide24a" />
     </LinearLayout>
 
     <Button
         android:id="@+id/yesButton"
         android:layout_width="match_parent"
-        android:layout_height="0dip"
+        android:layout_height="wrap_content"
         android:layout_weight=".15"
         android:text="@string/next"
         android:onClick="nextMethodSL24" />
