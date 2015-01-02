@@ -253,7 +253,7 @@ public class Slide3Activity extends Activity {
             case R.id.action_slide23:
                 if (!SoundModule.playing)
                 {
-                    Intent intent23 = new Intent(this, Slide23Activity.class);
+                    Intent intent23 = new Intent(this, SnackFoodActivity.class);
                     startActivity(intent23);
                     finish();
                 }

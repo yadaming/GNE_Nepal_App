@@ -9,49 +9,81 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
 
-public class Slide23Activity extends Activity {
+public class SnackFoodActivity extends Activity {
 
-    public void zeroToTwo(View view) {
-        if (SoundModule.playing == false) {
+    /*
+        This function is called if the user selects the button for zero to one
+     */
+    public void zeroToTwo(View view)
+    {
+        if (!SoundModule.playing)
+        {
             ScoreKeeper.sl23 = 0;
+
             Intent intent = new Intent(this, Slide24Activity.class);
             startActivity(intent);
             finish();
         }
     }
 
-    public void threeToSix(View view) {
-        if (SoundModule.playing == false) {
+    /*
+        This function is called if the user selects the button for 3 to 6
+    */
+    public void threeToSix(View view)
+    {
+        if (!SoundModule.playing)
+        {
             ScoreKeeper.sl23 = 1;
+
             Intent intent = new Intent(this, Slide24Activity.class);
             startActivity(intent);
             finish();
         }
     }
 
-    public void moreThanSix(View view) {
-        if (SoundModule.playing == false) {
+    /*
+        This function is called if the user selects the button for more than 6
+    */
+    public void moreThanSix(View view)
+    {
+        if (!SoundModule.playing)
+        {
             ScoreKeeper.sl23 = 2;
+
             Intent intent = new Intent(this, Slide24Activity.class);
             startActivity(intent);
             finish();
         }
     }
 
-    public void nextMethodSL23(View view) {
-        if (SoundModule.playing == false) {
-            SoundModule SoundModule = new SoundModule(this);
-            SoundModule.play(R.raw.vrp_slide23question);
+
+    /*
+        This is the next slide button
+        But at present it just plays the question again
+
+        TODO we might want to get rid of this ?
+     */
+    public void nextMethodSnackFood(View view)
+    {
+        if (!SoundModule.playing)
+        {
+            SoundModule soundmodule = new SoundModule(this);
+            soundmodule.play(R.raw.slide_20_question);
         }
     }
+
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState)
+    {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_slide23);
-        SoundModule SoundModule = new SoundModule(this);
-        SoundModule.play(R.raw.vrp_slide23proper);
+        setContentView(R.layout.activity_snackfood);
+
+        // play the "start and question" sound
+        SoundModule start_sound = new SoundModule(this);
+        start_sound.play(R.raw.slide_20_start_and_question);
     }
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu)
@@ -282,7 +314,7 @@ public class Slide23Activity extends Activity {
             case R.id.action_slide23:
                 if (!SoundModule.playing)
                 {
-                    Intent intent23 = new Intent(this, Slide23Activity.class);
+                    Intent intent23 = new Intent(this, SnackFoodActivity.class);
                     startActivity(intent23);
                     finish();
                 }
