@@ -16,9 +16,10 @@ public class SnackFoodActivity extends Activity {
      */
     public void zeroToTwo(View view)
     {
-        if (SoundModule.playing == false)
+        if (!SoundModule.playing)
         {
             ScoreKeeper.sl23 = 0;
+
             Intent intent = new Intent(this, Slide24Activity.class);
             startActivity(intent);
             finish();
@@ -26,13 +27,14 @@ public class SnackFoodActivity extends Activity {
     }
 
     /*
-       This function is called if the user selects the button for 3 to 6
+        This function is called if the user selects the button for 3 to 6
     */
     public void threeToSix(View view)
     {
-        if (SoundModule.playing == false)
+        if (!SoundModule.playing)
         {
             ScoreKeeper.sl23 = 1;
+
             Intent intent = new Intent(this, Slide24Activity.class);
             startActivity(intent);
             finish();
@@ -40,13 +42,14 @@ public class SnackFoodActivity extends Activity {
     }
 
     /*
-       This function is called if the user selects the button for more than 6
+        This function is called if the user selects the button for more than 6
     */
     public void moreThanSix(View view)
     {
-        if (SoundModule.playing == false)
+        if (!SoundModule.playing)
         {
             ScoreKeeper.sl23 = 2;
+
             Intent intent = new Intent(this, Slide24Activity.class);
             startActivity(intent);
             finish();
@@ -54,13 +57,18 @@ public class SnackFoodActivity extends Activity {
     }
 
 
+    /*
+        This is the next slide button
+        But at present it just plays the question again
+
+        TODO we might want to get rid of this ?
+     */
     public void nextMethodSnackFood(View view)
     {
-        if (SoundModule.playing == false)
+        if (!SoundModule.playing)
         {
-            SoundModule SoundModule = new SoundModule(this);
-            // TODO change sound
-            SoundModule.play(R.raw.slide_20);
+            SoundModule soundmodule = new SoundModule(this);
+            soundmodule.play(R.raw.slide_20_question);
         }
     }
 
@@ -70,9 +78,10 @@ public class SnackFoodActivity extends Activity {
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_snackfood);
-        SoundModule SoundModule = new SoundModule(this);
-        // TODO change sound
-        SoundModule.play(R.raw.slide_20);
+
+        // play the "start and question" sound
+        SoundModule start_sound = new SoundModule(this);
+        start_sound.play(R.raw.slide_20_start_and_question);
     }
 
 
