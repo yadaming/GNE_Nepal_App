@@ -240,7 +240,7 @@ public class InitialActivity extends Activity {
                 break;
             case R.id.action_slide23:
                 if (!SoundModule.playing) {
-                    Intent intent23 = new Intent(this, Slide23Activity.class);
+                    Intent intent23 = new Intent(this, SnackFoodActivity.class);
                     startActivity(intent23);
                     finish();
                 } else if (SoundModule.playing) // if the audio is playing: tell the user to wait

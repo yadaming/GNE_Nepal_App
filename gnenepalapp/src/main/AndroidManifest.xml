@@ -100,7 +100,7 @@
             android:screenOrientation="landscape" >
         </activity>
         <activity
-            android:name=".Slide23Activity"
+            android:name=".SnackFoodActivity"
             android:label="@string/title_activity_slide23"
             android:screenOrientation="landscape" >
         </activity>

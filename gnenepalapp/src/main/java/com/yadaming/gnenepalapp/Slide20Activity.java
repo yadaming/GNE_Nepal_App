@@ -63,7 +63,9 @@ public class Slide20Activity extends Activity
     {
         if (!SoundModule.playing)
         {
-            Intent intent = new Intent(this, Slide22Activity.class);
+            // Slide 20 goes directly to the Snack Food activity - which
+            // in the notes corresponds to Slide 20 (slide 22 in the PDF)
+            Intent intent = new Intent(this, SnackFoodActivity.class);
             startActivity(intent);
             finish();
         }
@@ -79,7 +81,7 @@ public class Slide20Activity extends Activity
         // Create a sound module to play
         SoundModule SoundModule = new SoundModule(this);
         // The audio to play for slide 20 is slide_19 because the slide numbers don't match up
-        SoundModule.playsound(R.raw.slide_19);
+        SoundModule.playsound(R.raw.slide_19_start_and_question);
     }
 
 
@@ -312,7 +314,7 @@ public class Slide20Activity extends Activity
             case R.id.action_slide23:
                 if (!SoundModule.playing)
                 {
-                    Intent intent23 = new Intent(this, Slide23Activity.class);
+                    Intent intent23 = new Intent(this, SnackFoodActivity.class);
                     startActivity(intent23);
                     finish();
                 }

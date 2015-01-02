@@ -13,7 +13,7 @@ public class Slide22Activity extends Activity {
 
     public void nextMethodSL22(View view) {
         if (SoundModule.playing == false) {
-            Intent intent = new Intent(this, Slide23Activity.class);
+            Intent intent = new Intent(this, SnackFoodActivity.class);
             startActivity(intent);
             finish();
         }
@@ -256,7 +256,7 @@ public class Slide22Activity extends Activity {
             case R.id.action_slide23:
                 if (!SoundModule.playing)
                 {
-                    Intent intent23 = new Intent(this, Slide23Activity.class);
+                    Intent intent23 = new Intent(this, SnackFoodActivity.class);
                     startActivity(intent23);
                     finish();
                 }
