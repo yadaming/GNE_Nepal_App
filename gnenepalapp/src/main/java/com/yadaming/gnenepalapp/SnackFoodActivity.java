@@ -18,7 +18,10 @@ public class SnackFoodActivity extends Activity {
     {
         if (!SoundModule.playing)
         {
-            ScoreKeeper.sl23 = 0;
+            String filename = "dataFile";
+            String filecontent = "slide 20 0-2 servings";
+            fileIO fileio = new fileIO();
+            fileio.write(filename, filecontent);
 
             Intent intent = new Intent(this, Alcohol.class);
             startActivity(intent);
@@ -33,7 +36,10 @@ public class SnackFoodActivity extends Activity {
     {
         if (!SoundModule.playing)
         {
-            ScoreKeeper.sl23 = 1;
+            String filename = "dataFile";
+            String filecontent = "slide 20 3-6 servings";
+            fileIO fileio = new fileIO();
+            fileio.write(filename, filecontent);
 
             Intent intent = new Intent(this, Alcohol.class);
             startActivity(intent);
@@ -48,30 +54,16 @@ public class SnackFoodActivity extends Activity {
     {
         if (!SoundModule.playing)
         {
-            ScoreKeeper.sl23 = 2;
+            String filename = "dataFile";
+            String filecontent = "slide 20 6+ servings";
+            fileIO fileio = new fileIO();
+            fileio.write(filename, filecontent);
 
             Intent intent = new Intent(this, Alcohol.class);
             startActivity(intent);
             finish();
         }
     }
-
-
-    /*
-        This is the next slide button
-        But at present it just plays the question again
-
-        TODO we might want to get rid of this ?
-     */
-    public void nextMethodSnackFood(View view)
-    {
-        if (!SoundModule.playing)
-        {
-            SoundModule soundmodule = new SoundModule(this);
-            soundmodule.play(R.raw.slide_20_question);
-        }
-    }
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
