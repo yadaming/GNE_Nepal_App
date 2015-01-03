@@ -14,6 +14,7 @@
         android:height="40dp"
         android:textSize="30sp"
         android:paddingLeft="150dp"
+        android:textColor="#22316C"
         android:text="मी शबटाशभनहरु फच्चा जन्भाउन उभेय ऩ गे का "
     />
 
@@ -23,6 +24,7 @@
         android:height="40dp"
         android:textSize="30sp"
         android:paddingLeft="250dp"
+        android:textColor="#22316C"
         android:text="भदहराहरुको राधग भात्र हो "
     />
 
@@ -39,6 +41,7 @@
         android:height="40dp"
         android:textSize="30sp"
         android:paddingLeft="50dp"
+        android:textColor="#FA1D2F"
         android:text="मी शबटाशभनहरु ऩ रुष तथा फारफाशरकाहरुका राधग होइन "
     />
 
