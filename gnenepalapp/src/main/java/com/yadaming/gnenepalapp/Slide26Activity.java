@@ -9,23 +9,51 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
 
-public class Slide26Activity extends Activity {
-    public void nextMethodSL26(View view) {
-        if (SoundModule.playing == false) {
-            Intent intent = new Intent(this, Slide27Activity.class);
+public class Slide26Activity extends Activity
+{
+    CircleView circle;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState)
+    {
+        super.onCreate(savedInstanceState);
+
+        circle = new CircleView(this);
+        circle.setBackgroundResource(R.drawable.nepal_kitchen);
+
+        circle.setOnClickListener(
+                new View.OnClickListener()
+                {
+                    @Override
+                    public void onClick(View v)
+                    {
+                        circle.startAnimation();
+
+                    }
+                }
+        );
+
+        setContentView(circle);
+        SoundModule SoundModule = new SoundModule(this);
+        // play the start sound and the question
+        SoundModule.play(R.raw.slide_24_start_and_question);
+
+
+
+    }
+
+
+    public void nextMethodSL26(View view)
+    {
+        if (!SoundModule.playing)
+        {
+            // the next slide is slide 29 - which corresponds to slide 25 in the notes (or slide 28 in the pdf)
+            Intent intent = new Intent(this, Slide28Activity.class);
             startActivity(intent);
             finish();
         }
     }
 
-
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_slide26);
-        SoundModule SoundModule = new SoundModule(this);
-        SoundModule.play(R.raw.vrp_slide26);
-    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu)
@@ -35,6 +63,8 @@ public class Slide26Activity extends Activity {
         inflater.inflate(R.menu.initial, menu);
         return super.onCreateOptionsMenu(menu);
     }
+
+
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item)
