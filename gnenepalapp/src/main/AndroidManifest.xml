@@ -199,6 +199,10 @@
             android:name=".Hand"
             android:label="@string/title_activity_hand" >
         </activity>
+        <activity
+            android:name=".End"
+            android:label="@string/title_activity_end" >
+        </activity>
     </application>
 
 </manifest>

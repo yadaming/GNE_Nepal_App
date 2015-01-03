@@ -46,5 +46,6 @@
     <string name="title_activity_why_be_nutritious">WhyBeNutritious</string>
     <string name="title_activity_hygiene">Hygiene</string>
     <string name="title_activity_hand">Hand</string>
+    <string name="title_activity_end">End</string>
 
 </resources>
