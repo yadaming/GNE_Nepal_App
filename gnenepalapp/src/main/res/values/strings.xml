@@ -43,5 +43,7 @@
     <string name="title_activity_folate">Folate</string>
     <string name="title_activity_cooking">Cooking</string>
     <string name="title_activity_alcohol">Alcohol</string>
+    <string name="title_activity_why_be_nutritious">WhyBeNutritious</string>
+    <string name="title_activity_hygiene">Hygiene</string>
 
 </resources>
