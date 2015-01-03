@@ -195,6 +195,10 @@
             android:name=".Hygiene"
             android:label="@string/title_activity_hygiene" >
         </activity>
+        <activity
+            android:name=".Hand"
+            android:label="@string/title_activity_hand" >
+        </activity>
     </application>
 
 </manifest>

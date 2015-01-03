@@ -10,13 +10,13 @@ import android.view.View;
 import android.widget.Toast;
 
 
-public class Hygiene extends Activity
+public class Hand extends Activity
 {
-    public void nextMethodHygiene(View view)
+    public void nextMethodHand(View view)
     {
         if (!SoundModule.playing)
         {
-            Intent intent = new Intent(this, Hand.class);
+            Intent intent = new Intent(this, End.class);
             startActivity(intent);
             finish();
         }
@@ -27,10 +27,10 @@ public class Hygiene extends Activity
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_hygiene);
+        setContentView(R.layout.activity_hand);
 
         SoundModule SoundModule = new SoundModule(this);
-        SoundModule.play(R.raw.slide_28);
+        SoundModule.play(R.raw.slide_29_all_files_put_together);
     }
 
 

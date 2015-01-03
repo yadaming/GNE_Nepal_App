@@ -45,5 +45,6 @@
     <string name="title_activity_alcohol">Alcohol</string>
     <string name="title_activity_why_be_nutritious">WhyBeNutritious</string>
     <string name="title_activity_hygiene">Hygiene</string>
+    <string name="title_activity_hand">Hand</string>
 
 </resources>
