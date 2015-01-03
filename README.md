@@ -1,5 +1,9 @@
-GNE_Nepal_App
+GNE Nepal App
 =============
  
-All the code and resources for the GNE Android application.
-Created by Doug and Michael McGirr
+Version 2
+---------
+
+All the code and resources for the Global Nutrition Empowerment edcation application for Android.
+Created and written by Doug and Michael McGirr
+
