@@ -16,29 +16,25 @@ public class Slide29Activity extends Activity {
 
     public void boy(View view) {
         if (SoundModule.playing == false) {
-            SoundModule.play(R.raw.vrp_slide29_updatedboy);
-            ScoreKeeper.incorrect = ScoreKeeper.incorrect + 1;
+            SoundModule.play(R.raw.slide_26_no_not_for_children);
         }
     }
 
     public void old(View view) {
         if (SoundModule.playing == false) {
-            SoundModule.play(R.raw.vrp_slide29_updatedoldwomen);
-            ScoreKeeper.incorrect = ScoreKeeper.incorrect + 1;
+            SoundModule.play(R.raw.slide_26_no_this_woman_is_too_old_to_have_children);
         }
     }
 
     public void man(View view) {
         if (SoundModule.playing == false) {
-            SoundModule.play(R.raw.vrp_slide29_updatedmen);
-            ScoreKeeper.incorrect = ScoreKeeper.incorrect + 1;
+            SoundModule.play(R.raw.slide_26_no_not_for_men);
         }
     }
 
     public void girl(View view) {
         if (SoundModule.playing == false) {
-            SoundModule.play(R.raw.vrp_slide29_updatedsmallgirl);
-            ScoreKeeper.incorrect = ScoreKeeper.incorrect + 1;
+            SoundModule.play(R.raw.slide_26_no_not_for_children);
         }
     }
 
@@ -61,8 +57,7 @@ public class Slide29Activity extends Activity {
             ImageView SL29gold1;
             SL29gold1 = (ImageView) findViewById(R.id.imageView6);
             SL29gold1.setVisibility(View.VISIBLE);
-            ScoreKeeper.correct = ScoreKeeper.correct + 1;
-            SoundModule.play(R.raw.vrp_slide29_updatedproperactual);
+            SoundModule.play(R.raw.slide_26_correct_answer);
         }
     }
 
@@ -75,8 +70,7 @@ public class Slide29Activity extends Activity {
             ImageView SL29gold2;
             SL29gold2 = (ImageView) findViewById(R.id.imageView5);
             SL29gold2.setVisibility(View.VISIBLE);
-            ScoreKeeper.correct = ScoreKeeper.correct + 1;
-            SoundModule.play(R.raw.vrp_slide29_updatedproperactual);
+            SoundModule.play(R.raw.slide_26_correct_answer);
         }
     }
 
@@ -84,7 +78,7 @@ public class Slide29Activity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_slide29);
-        SoundModule.play(R.raw.vrp_slide29_updatedproperactual);
+        SoundModule.play(R.raw.slide_26);
     }
 
     @Override
