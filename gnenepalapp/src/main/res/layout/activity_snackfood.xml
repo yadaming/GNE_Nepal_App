@@ -53,33 +53,25 @@
         android:layout_weight="1"
         android:orientation="horizontal">
         <Button
-            android:id="@+id/yesButton"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="nextMethodSnackFood"
-            android:background="#00ff00"
-            android:layout_weight="1"
-            android:text="@string/next" />
-        <Button
             android:id="@+id/noButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="*"
+            android:text="0 - 2"
             android:onClick="zeroToTwo" />
         <Button
             android:id="@+id/button3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="****"
+            android:text="3 - 6"
             android:onClick="threeToSix" />
         <Button
             android:id="@+id/button4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="******"
+            android:text="6+"
             android:onClick="moreThanSix" />
     </LinearLayout>
 
