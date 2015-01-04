@@ -19,22 +19,22 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:src="@drawable/slide29f"
-            android:onClick="old" />
+            android:src="@drawable/topleft"
+            android:onClick="right1SL29" />
         <ImageView
             android:id="@+id/imageView1"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:src="@drawable/slide29a"
+            android:src="@drawable/topmiddle"
             android:onClick="boy" />
         <ImageView
             android:id="@+id/imageButton2"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:src="@drawable/slide29e"
-            android:onClick="right1SL29" />
+            android:src="@drawable/topright"
+            android:onClick="girl" />
     </LinearLayout>
 
     <LinearLayout
@@ -47,23 +47,23 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:src="@drawable/slide29d"
-            android:onClick="right2SL29" />
+            android:src="@drawable/bottomleft"
+            android:onClick="man" />
         <ImageView
             android:id="@+id/imageView3"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:layout_marginRight="22dp"
-            android:src="@drawable/slide29c"
-            android:onClick="man" />
+            android:src="@drawable/bottommiddle"
+            android:onClick="right2SL29" />
         <ImageView
             android:id="@+id/imageView2"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:src="@drawable/slide29b"
-            android:onClick="girl" />
+            android:src="@drawable/bottomright"
+            android:onClick="old" />
     </LinearLayout>
 
     <LinearLayout
