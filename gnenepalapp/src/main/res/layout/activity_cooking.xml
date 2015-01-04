@@ -14,24 +14,28 @@
         android:layout_height="wrap_content"
         android:height="40dp"
         android:textSize="30sp"
-        android:paddingLeft="150dp"
+        android:textStyle="bold"
+        android:textColor="#22316C"
+        android:paddingLeft="180dp"
         android:text="हाभीरे घयभा दै तनक रुऩभा खाने परपूर तथा"
-        />
+    />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:height="40dp"
         android:textSize="30sp"
-        android:paddingLeft="150dp"
+        android:paddingLeft="200dp"
+        android:textStyle="bold"
+        android:textColor="#22316C"
         android:text="सागऩात सदहतको खाना नै स्वस्थ खाना हो "
-        />
+    />
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_weight="1">
+        android:layout_weight="15">
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
@@ -44,9 +48,11 @@
             android:src="@drawable/food"/>
     </LinearLayout>
 
+
     <ImageButton
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_weight="1"
         android:src="@drawable/yes"
         android:background="#00FF00"
         android:onClick="nextMethodCooking"

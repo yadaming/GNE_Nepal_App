@@ -16,7 +16,7 @@ public class Cooking extends Activity {
     {
         if (!SoundModule.playing)
         {
-            Intent intent = new Intent(this, Folate.class);
+            Intent intent = new Intent(this, Slide20Activity.class);
             startActivity(intent);
             finish();
         }
@@ -26,7 +26,8 @@ public class Cooking extends Activity {
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_folate);
+        setContentView(R.layout.activity_cooking);
+
         SoundModule SoundModule = new SoundModule(this);
         SoundModule.play(R.raw.slide_18);
     }

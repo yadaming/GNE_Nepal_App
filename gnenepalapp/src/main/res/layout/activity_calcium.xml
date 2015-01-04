@@ -56,8 +56,9 @@
                 android:height="40dp"
                 android:textSize="30sp"
                 android:textColor="#ffcf0918"
+                android:textStyle="bold"
                 android:paddingLeft="180dp"
-                android:text="Calcium"
+                android:text="CALCIUM"
             />
         </LinearLayout>
         <ImageView

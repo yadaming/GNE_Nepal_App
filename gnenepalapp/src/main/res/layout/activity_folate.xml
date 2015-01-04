@@ -14,6 +14,8 @@
         android:layout_height="wrap_content"
         android:height="40dp"
         android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="#22316C"
         android:paddingLeft="350dp"
         android:text="पोशरक एशसड "
     />
@@ -23,7 +25,7 @@
         android:layout_height="wrap_content"
         android:height="40dp"
         android:textSize="30sp"
-        android:paddingLeft="10dp"
+        android:paddingLeft="90dp"
         android:text="दार, साग य अन्म हरयमो सागऩातभा अधधक भात्राभा "
     />
 
@@ -32,7 +34,7 @@
         android:layout_height="wrap_content"
         android:height="40dp"
         android:textSize="30sp"
-        android:paddingLeft="10dp"
+        android:paddingLeft="290dp"
         android:text="पोशरक एशसड ऩाइन्ि। "
     />
 
@@ -63,8 +65,10 @@
         android:layout_height="wrap_content"
         android:height="40dp"
         android:textSize="30sp"
-        android:paddingLeft="260dp"
-        android:text="Folic Acid"
+        android:textColor="#ffcf0918"
+        android:textStyle="bold"
+        android:paddingLeft="340dp"
+        android:text="FOLIC ACID"
     />
 
     <TextView
@@ -72,7 +76,7 @@
         android:layout_height="wrap_content"
         android:height="40dp"
         android:textSize="30sp"
-        android:paddingLeft="250dp"
+        android:paddingLeft="120dp"
         android:text="यसऱे नवजात शिि मा हुनसक्ने जटिऱताफाि जोगाउँ छ। "
     />
 

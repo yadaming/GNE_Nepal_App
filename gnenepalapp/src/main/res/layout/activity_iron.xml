@@ -59,7 +59,7 @@
         android:textStyle="bold"
         android:textColor="#ffcf0918"
         android:paddingLeft="370dp"
-        android:text="Iron"
+        android:text="IRON"
     />
 
     <LinearLayout
