@@ -21,13 +21,14 @@ public class Slide24Activity extends Activity
         }
     }
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_slide24);
+
         SoundModule SoundModule = new SoundModule(this);
+        // Slide 24 corresponds to slide 22 in the notes
         SoundModule.play(R.raw.slide_22);
     }
 

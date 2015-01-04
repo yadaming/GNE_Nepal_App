@@ -25,7 +25,7 @@
         android:layout_height="wrap_content"
         android:height="40dp"
         android:textSize="30sp"
-        android:paddingLeft="250dp"
+        android:paddingLeft="270dp"
         android:textColor="#22316C"
         android:text="खानारे िरययराई हानी गि "
     />
@@ -43,7 +43,7 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="0.6"
+            android:layout_weight="0.7"
             android:src="@drawable/kurk"/>
     </LinearLayout>
 

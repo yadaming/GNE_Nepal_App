@@ -57,7 +57,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight=".15"
+        android:background="#00ff00"
         android:text="@string/next"
-        android:onClick="nextMethodSL24" />
+        android:onClick="nextMethodSL24"
+    />
 
 </LinearLayout>

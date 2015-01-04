@@ -10,54 +10,72 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.Toast;
 
-public class Slide29Activity extends Activity {
-
-    SoundModule SoundModule = new SoundModule(this);
-
-    public void boy(View view) {
-        if (SoundModule.playing == false) {
-            SoundModule.play(R.raw.slide_26_no_not_for_children);
+public class Slide29Activity extends Activity
+{
+    public void boy(View view)
+    {
+        if (!SoundModule.playing)
+        {
+            SoundModule boy_sound = new SoundModule(this);
+            boy_sound.play(R.raw.slide_26_no_not_for_children);
         }
     }
 
-    public void old(View view) {
-        if (SoundModule.playing == false) {
-            SoundModule.play(R.raw.slide_26_no_this_woman_is_too_old_to_have_children);
+    public void old(View view)
+    {
+        if (!SoundModule.playing)
+        {
+            SoundModule old_sound = new SoundModule(this);
+            old_sound.play(R.raw.slide_26_no_this_woman_is_too_old_to_have_children);
         }
     }
 
-    public void man(View view) {
-        if (SoundModule.playing == false) {
-            SoundModule.play(R.raw.slide_26_no_not_for_men);
+    public void man(View view)
+    {
+        if (!SoundModule.playing)
+        {
+            SoundModule man_sound = new SoundModule(this);
+            man_sound.play(R.raw.slide_26_no_not_for_men);
         }
     }
 
-    public void girl(View view) {
-        if (SoundModule.playing == false) {
-            SoundModule.play(R.raw.slide_26_no_not_for_children);
+    public void girl(View view)
+    {
+        if (!SoundModule.playing)
+        {
+            SoundModule girl_sound = new SoundModule(this);
+            girl_sound.play(R.raw.slide_26_no_not_for_children);
         }
     }
+
 
     // opens up slide 30
-    public void nextMethodSL29(View view) {
-        if (SoundModule.playing == false) {
+    public void nextMethodSL29(View view)
+    {
+        if (!SoundModule.playing)
+        {
             Intent intent = new Intent(this, Slide30Activity.class);
             startActivity(intent);
             finish();
         }
     }
 
+
     /*
         play second audio file that is meant to be played after the
         person makes their selection
         I Think
     */
-    public void right1SL29(View view) {
-        if (SoundModule.playing == false) {
+    public void right1SL29(View view)
+    {
+        if (!SoundModule.playing)
+        {
             ImageView SL29gold1;
             SL29gold1 = (ImageView) findViewById(R.id.imageView6);
             SL29gold1.setVisibility(View.VISIBLE);
-            SoundModule.play(R.raw.slide_26_correct_answer);
+
+            SoundModule correct_sound1 = new SoundModule(this);
+            correct_sound1.play(R.raw.slide_26_correct_answer);
         }
     }
 
@@ -65,20 +83,27 @@ public class Slide29Activity extends Activity {
         play third audio when they push the button again
         I'm pretty sure this is what they want
      */
-    public void right2SL29(View view) {
-        if (SoundModule.playing == false) {
+    public void right2SL29(View view)
+    {
+        if (!SoundModule.playing)
+        {
             ImageView SL29gold2;
             SL29gold2 = (ImageView) findViewById(R.id.imageView5);
             SL29gold2.setVisibility(View.VISIBLE);
-            SoundModule.play(R.raw.slide_26_correct_answer);
+
+            SoundModule correct_sound2 = new SoundModule(this);
+            correct_sound2.play(R.raw.slide_26_correct_answer);
         }
     }
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState)
+    {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_slide29);
-        SoundModule.play(R.raw.slide_26);
+
+        SoundModule start_sound = new SoundModule(this);
+        start_sound.play(R.raw.slide_26);
     }
 
     @Override

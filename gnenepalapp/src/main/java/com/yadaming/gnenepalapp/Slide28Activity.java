@@ -21,16 +21,16 @@ public class Slide28Activity extends Activity
         }
     }
 
-
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState)
+    {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_slide28);
 
         SoundModule SoundModule = new SoundModule(this);
+        // Slide 28 corresponds to slide 25 in the notes
         SoundModule.play(R.raw.slide_25);
     }
-
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu)
@@ -40,7 +40,6 @@ public class Slide28Activity extends Activity
         inflater.inflate(R.menu.initial, menu);
         return super.onCreateOptionsMenu(menu);
     }
-
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item)

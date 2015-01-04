@@ -29,6 +29,7 @@ public class Slide25Activity extends Activity
         setContentView(R.layout.activity_slide25);
 
         SoundModule SoundModule = new SoundModule(this);
+        // Slide 25 corresponds to slide 23 in the notes
         SoundModule.play(R.raw.slide_23);
     }
 

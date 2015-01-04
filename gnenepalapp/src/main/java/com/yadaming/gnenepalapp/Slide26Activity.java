@@ -36,10 +36,8 @@ public class Slide26Activity extends Activity
         setContentView(circle);
         SoundModule SoundModule = new SoundModule(this);
         // play the start sound and the question
+        // Slide 26 corresonds to slide 24 in the notes
         SoundModule.play(R.raw.slide_24_start_and_question);
-
-
-
     }
 
 
