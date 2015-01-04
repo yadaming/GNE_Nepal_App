@@ -14,7 +14,9 @@
         android:layout_height="wrap_content"
         android:height="40dp"
         android:textSize="30sp"
-        android:paddingLeft="350dp"
+        android:textStyle="bold"
+        android:textColor="#22316C"
+        android:paddingLeft="300dp"
         android:text="शबटाशभन ‘ए’"
     />
 
@@ -23,7 +25,7 @@
         android:layout_height="wrap_content"
         android:height="40dp"
         android:textSize="30sp"
-        android:paddingLeft="10dp"
+        android:paddingLeft="40dp"
         android:text="यतन्धोको योकथाभका साथसाथै अरू सॊक्रभणसॊग रड्न सहमोग "
     />
 
@@ -32,7 +34,7 @@
         android:layout_height="wrap_content"
         android:height="40dp"
         android:textSize="30sp"
-        android:paddingLeft="350dp"
+        android:paddingLeft="400dp"
         android:text="गि"
     />
 
@@ -64,6 +66,7 @@
         android:layout_height="wrap_content"
         android:height="40dp"
         android:textSize="30sp"
+        android:textColor="#ffcf0918"
         android:paddingLeft="350dp"
         android:text="Vitamin A"
     />
@@ -90,6 +93,7 @@
             android:src="@drawable/bananas"/>
     </LinearLayout>
 
+
      <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -98,6 +102,7 @@
         android:paddingLeft="60dp"
         android:text="गाजय य अन्म ऩहें रा परपूर तथा तयकायीभा अधधक भात्राभा"
     />
+
 
     <TextView
         android:layout_width="match_parent"
@@ -108,17 +113,13 @@
         android:text="शबटाशभन ‘ए’ ऩाइन्ि "
     />
 
-    <LinearLayout
+    <ImageButton
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <ImageButton
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:src="@drawable/yes"
-            android:background="#00FF00"
-            android:onClick="nextMethodVitaminA"
-            />
-    </LinearLayout>
+        android:layout_height="wrap_content"
+        android:src="@drawable/yes"
+        android:background="#00FF00"
+        android:onClick="nextMethodVitaminA"
+    />
 
 
 </LinearLayout>

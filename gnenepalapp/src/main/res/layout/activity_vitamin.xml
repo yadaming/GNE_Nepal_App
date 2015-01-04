@@ -9,56 +9,42 @@
     android:paddingBottom="@dimen/activity_vertical_margin"
     tools:context="com.yadaming.gnenepalapp.Vitamin">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:height="40dp"
-            android:textSize="30sp"
-            android:paddingLeft="350dp"
-            android:text="शबटाशभन"
-            />
-    </LinearLayout>
-
-    <LinearLayout
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        >
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:height="40dp"
-            android:textSize="30sp"
-            android:paddingLeft="350dp"
-            android:text="Multivitamin"
-            />
-    </LinearLayout>
+        android:height="40dp"
+        android:textSize="30sp"
+        android:textColor="#22316C"
+        android:textStyle="bold"
+        android:paddingLeft="340dp"
+        android:text="शबटाशभन"
+    />
+
+    <TextView
+         android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:height="40dp"
+        android:textSize="30sp"
+        android:paddingLeft="330dp"
+        android:text="Multivitamin"
+     />
 
 
-    <LinearLayout
+    <ImageView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="1">
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:src="@drawable/vitamin"
-        />
-    </LinearLayout>
+        android:layout_height="wrap_content"
+        android:layout_weight="8"
+        android:src="@drawable/vitamin"
+    />
 
-    <LinearLayout
+
+    <ImageButton
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="2">
-        <ImageButton
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:src="@drawable/yes"
-            android:background="#00FF00"
-            android:onClick="nextMethodVitamin"
-        />
-    </LinearLayout>
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:src="@drawable/yes"
+        android:background="#00FF00"
+        android:onClick="nextMethodVitamin"
+    />
 
 </LinearLayout>

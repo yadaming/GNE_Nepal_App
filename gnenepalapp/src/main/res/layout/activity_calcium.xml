@@ -14,18 +14,21 @@
         android:layout_height="wrap_content"
         android:height="40dp"
         android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="#22316C"
         android:paddingLeft="350dp"
         android:text="क्मान्ससमभ"
-        />
+    />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:height="40dp"
         android:textSize="30sp"
-        android:paddingLeft="10dp"
+        android:paddingLeft="100dp"
         android:text="हड्डी फशरमो फनाउन य सॊक्रभणसॊग रड्न भद्दत गि "
-        />
+    />
+
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -37,16 +40,32 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:src="@drawable/legs"/>
-        <ImageView
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:src="@drawable/fish"/>
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="9"
+                android:src="@drawable/fish"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:height="40dp"
+                android:textSize="30sp"
+                android:textColor="#ffcf0918"
+                android:paddingLeft="180dp"
+                android:text="Calcium"
+            />
+        </LinearLayout>
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:src="@drawable/milk"/>
+            android:layout_weight="333"
+            android:src="@drawable/milk"
+        />
     </LinearLayout>
 
     <TextView
@@ -54,16 +73,7 @@
         android:layout_height="wrap_content"
         android:height="40dp"
         android:textSize="30sp"
-        android:paddingLeft="260dp"
-        android:text="Calcium"
-        />
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:height="40dp"
-        android:textSize="30sp"
-        android:paddingLeft="250dp"
+        android:paddingLeft="190dp"
         android:text="द धय भािाभा क्मान्ससमभ ऩाइन्ि "
         />
 
@@ -76,4 +86,3 @@
         android:onClick="nextMethodCalcium"
     />
 </LinearLayout>
-
