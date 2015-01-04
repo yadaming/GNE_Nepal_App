@@ -10,11 +10,13 @@ import android.view.View;
 import android.widget.Toast;
 
 
-public class Rice_none_circled extends Activity {
-
+public class Rice_none_circled extends Activity
+{
     // next method to call the next slide
-    public void nextMethodRiceNoneCircled(View view) {
-        if (SoundModule.playing == false) {
+    public void nextMethodRiceNoneCircled(View view)
+    {
+        if (!SoundModule.playing)
+        {
             // This sets the Rice_main_circled activity as the next slide to play
             Intent intent = new Intent(this, Rice_main_circled.class);
             startActivity(intent);
@@ -23,10 +25,14 @@ public class Rice_none_circled extends Activity {
     }
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState)
+    {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_rice_none_circled);
+
         SoundModule SoundModule = new SoundModule(this);
+        // Even though this would be slide 8 (since it follows slide 7) it plays
+        // the audio for slide 7
         SoundModule.play(R.raw.slide_7);
     }
 

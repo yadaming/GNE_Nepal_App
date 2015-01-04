@@ -10,23 +10,29 @@ import android.view.View;
 import android.widget.Toast;
 
 
-public class Rice_right_circled extends Activity {
-
+public class Rice_right_circled extends Activity
+{
     // next method to call the next slide
-    public void nextMethodRiceRightCircled(View view) {
-        if (SoundModule.playing == false) {
-            // This sets the slide 8 activity (which could have alternatively been named the Rice_top_circled activity)
+    public void nextMethodRiceRightCircled(View view)
+    {
+        if (!SoundModule.playing)
+        {
+            // This sets the slide 8 activity
             // as the next slide to play
+            // (Slide 8 could have alternatively been named the Rice_top_circled activity)
             Intent intent = new Intent(this, Slide8Activity.class);
             startActivity(intent);
             finish();
         }
     }
 
+
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState)
+    {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_rice_right_circled);
+
         SoundModule SoundModule = new SoundModule(this);
         SoundModule.play(R.raw.slide_9);
     }

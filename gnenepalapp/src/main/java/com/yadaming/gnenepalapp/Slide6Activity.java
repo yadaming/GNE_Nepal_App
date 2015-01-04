@@ -9,26 +9,36 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
 
-public class Slide6Activity extends Activity {
-
-    public void yesMethodSL6(View view) {
-        if (SoundModule.playing == false) {
+public class Slide6Activity extends Activity
+{
+    public void yesMethodSL6(View view)
+    {
+        if (!SoundModule.playing)
+        {
             fileIO filio = new fileIO();
+
             String filename = "dataFile";
             String filecontent = "slide 5 yes";
+
             filio.write(filename, filecontent);
+
             Intent intent = new Intent(this, Slide7Activity.class);
             startActivity(intent);
             finish();
         }
     }
 
-    public void noMethodSL6(View view) {
-        if (SoundModule.playing == false) {
+    public void noMethodSL6(View view)
+    {
+        if (!SoundModule.playing)
+        {
             fileIO filio = new fileIO();
+
             String filename = "dataFile";
             String filecontent = "slide 5 no";
+
             filio.write(filename, filecontent);
+
             Intent intent = new Intent(this, Slide7Activity.class);
             startActivity(intent);
             finish();
@@ -36,14 +46,15 @@ public class Slide6Activity extends Activity {
     }
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState)
+    {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_slide6);
 
         SoundModule SoundModule = new SoundModule(this);
-        SoundModule.play(R.raw.slide_5);
-        // TODO interactive question sound
+        SoundModule.play(R.raw.slide_5_start_and_question);
     }
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu)
@@ -53,6 +64,7 @@ public class Slide6Activity extends Activity {
         inflater.inflate(R.menu.initial, menu);
         return super.onCreateOptionsMenu(menu);
     }
+
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item)

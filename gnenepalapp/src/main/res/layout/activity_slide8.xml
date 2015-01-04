@@ -10,22 +10,38 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".Slide8Activity">
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:height="40dp"
+        android:textSize="30sp"
+        android:paddingLeft="210dp"
+        android:textColor="#22316C"
+        android:text="तयकायीहरु – शबटाशभन य खतनज "
+    />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:height="40dp"
+        android:textSize="30sp"
+        android:paddingLeft="190dp"
+        android:textColor="#000000"
+        android:text="Vegetables - Vitamins and Minerals"
+    />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_weight="8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/rice_top_2"
+    />
+
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_height="wrap_content"
         android:layout_weight="1">
-
-        <ImageView
-            android:id="@+id/imageView1"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:src="@drawable/rice_top_2" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight=".15">
 
         <Button
             android:id="@+id/zero_servings"
@@ -74,7 +90,6 @@
             android:layout_weight="1"
             android:onClick="fiveplusservs"
             android:text="5+" />
-
     </LinearLayout>
 
 </LinearLayout>

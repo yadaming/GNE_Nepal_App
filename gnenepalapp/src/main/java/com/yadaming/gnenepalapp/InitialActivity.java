@@ -1,6 +1,6 @@
 /*
     The initial main activity for the GNE Nepal App
-
+    Written by Doug and Mike McGirr
  */
 
 package com.yadaming.gnenepalapp;
@@ -17,17 +17,21 @@ import java.text.*;
 import java.util.Date;
 
 public class InitialActivity extends Activity {
+
     public void nextMethod(View view) {
         if (!SoundModule.playing) // if the audio is not playing then the next method can work
         {
-            Intent intent = new Intent(this, testActivity.class);
+            //Intent intent = new Intent(this, testActivity.class);
+            Intent intent = new Intent(this, Slide2Activity.class);
             startActivity(intent);
             finish();
-        } else if (SoundModule.playing) // if the audio is playing: tell the user to wait
+        }
+        else if (SoundModule.playing) // if the audio is playing: tell the user to wait
         {
             Toast.makeText(getBaseContext(), "You have to hear this!", Toast.LENGTH_SHORT).show();
         }
     }
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

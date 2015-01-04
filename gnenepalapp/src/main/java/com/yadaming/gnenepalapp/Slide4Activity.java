@@ -9,10 +9,12 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
 
-public class Slide4Activity extends Activity {
-
-    public void nextMethodSL4(View view) {
-        if (SoundModule.playing == false) {
+public class Slide4Activity extends Activity
+{
+    public void nextMethodSL4(View view)
+    {
+        if (!SoundModule.playing)
+        {
             Intent intent = new Intent(this, Slide5Activity.class);
             startActivity(intent);
             finish();
@@ -20,12 +22,17 @@ public class Slide4Activity extends Activity {
     }
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState)
+    {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_slide4);
+
         SoundModule SoundModule = new SoundModule(this);
+
+        // Slide 4 gets slide 3's sound
         SoundModule.play(R.raw.slide_3);
     }
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu)

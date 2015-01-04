@@ -11,15 +11,20 @@ import android.widget.Toast;
 
 public class Slide2Activity extends Activity {
 
-    public void noMethod(View view) {
+    public void noMethod(View view)
+    {
         SoundModule SoundModule = new SoundModule(this);
-        if (SoundModule.playing == false) {
+
+        if (!SoundModule.playing)
+        {
             SoundModule.play(R.raw.slide_2_answer);
         }
     }
 
-    public void yesMethod(View view) {
-        if (SoundModule.playing == false) {
+    public void yesMethod(View view)
+    {
+        if (!SoundModule.playing)
+        {
             Intent intent = new Intent(this, Slide4Activity.class);
             startActivity(intent);
             finish();

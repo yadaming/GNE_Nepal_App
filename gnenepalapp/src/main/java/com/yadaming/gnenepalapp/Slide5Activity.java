@@ -9,41 +9,54 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
 
-public class Slide5Activity extends Activity {
-
-    public void yesMethodSL5(View view) {
-        if (SoundModule.playing == false) {
+public class Slide5Activity extends Activity
+{
+    public void yesMethodSL5(View view)
+    {
+        if (!SoundModule.playing)
+        {
             fileIO filio = new fileIO();
+
             String filename = "dataFile";
             String filecontent = "slide 4 yes";
+
             filio.write(filename, filecontent);
+
             Intent intent = new Intent(this, Slide6Activity.class);
             startActivity(intent);
             finish();
         }
     }
 
-    public void noMethodSL5(View view) {
-        if (SoundModule.playing == false) {
+
+    public void noMethodSL5(View view)
+    {
+        if (!SoundModule.playing)
+        {
             fileIO filio = new fileIO();
+
             String filename = "dataFile";
             String filecontent = "slide 4 no";
+
             filio.write(filename, filecontent);
+
             Intent intent = new Intent(this, Slide6Activity.class);
             startActivity(intent);
             finish();
         }
     }
 
+
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState)
+    {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_slide5);
+
         SoundModule SoundModule = new SoundModule(this);
-        SoundModule.play(R.raw.slide_4);
-        while(!SoundModule.playing){}   // TODO make this work
-        SoundModule.play(R.raw.slide_4_question);
+        SoundModule.play(R.raw.slide_4_start_and_question);
     }
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu)
@@ -53,6 +66,7 @@ public class Slide5Activity extends Activity {
         inflater.inflate(R.menu.initial, menu);
         return super.onCreateOptionsMenu(menu);
     }
+
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item)

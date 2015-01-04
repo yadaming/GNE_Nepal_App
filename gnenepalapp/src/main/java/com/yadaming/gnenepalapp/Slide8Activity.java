@@ -9,13 +9,12 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
 
-public class Slide8Activity extends Activity {
-
-    //TODO add text for "fruits and vegetables" and the Nepali text
-
-    public void zeroservs(View view) {
-        if (SoundModule.playing == false) {
-
+public class Slide8Activity extends Activity
+{
+    public void zeroservs(View view)
+    {
+        if (SoundModule.playing == false)
+        {
             String filecontent = "slide 10 0 servings";
             String filename = "dataFile";
             fileIO fileio = new fileIO();
@@ -27,9 +26,11 @@ public class Slide8Activity extends Activity {
         }
     }
 
-    public void oneserv(View view) {
-        if (SoundModule.playing == false) {
 
+    public void oneserv(View view)
+    {
+        if (SoundModule.playing == false)
+        {
             String filecontent = "slide 10 1 servings";
             String filename = "dataFile";
             fileIO fileio = new fileIO();
@@ -41,10 +42,11 @@ public class Slide8Activity extends Activity {
         }
     }
 
-    public void twoservs(View view) {
-        if (SoundModule.playing == false) {
 
-
+    public void twoservs(View view)
+    {
+        if (SoundModule.playing == false)
+        {
             String filecontent = "slide 10 2 servings";
             String filename = "dataFile";
             fileIO fileio = new fileIO();
@@ -57,10 +59,10 @@ public class Slide8Activity extends Activity {
     }
 
 
-    public void threeservs(View view) {
-        if (SoundModule.playing == false) {
-
-
+    public void threeservs(View view)
+    {
+        if (SoundModule.playing == false)
+        {
             String filecontent = "slide 10 3 servings";
             String filename = "dataFile";
             fileIO fileio = new fileIO();
@@ -71,10 +73,12 @@ public class Slide8Activity extends Activity {
             finish();
         }
     }
-    public void fourservs(View view) {
-        if (SoundModule.playing == false) {
 
 
+    public void fourservs(View view)
+    {
+        if (SoundModule.playing == false)
+        {
             String filecontent = "slide 10 4 servings";
             String filename = "dataFile";
             fileIO fileio = new fileIO();
@@ -85,10 +89,12 @@ public class Slide8Activity extends Activity {
             finish();
         }
     }
-    public void fiveplusservs(View view) {
-        if (SoundModule.playing == false) {
 
 
+    public void fiveplusservs(View view)
+    {
+        if (SoundModule.playing == false)
+        {
             String filecontent = "slide 10 5+ servings";
             String filename = "dataFile";
             fileIO fileio = new fileIO();
@@ -100,13 +106,16 @@ public class Slide8Activity extends Activity {
         }
     }
 
+
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState)
+    {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_slide8);
         SoundModule SoundModule = new SoundModule(this);
         SoundModule.play(R.raw.slide_10_start_and_question);
     }
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu)
