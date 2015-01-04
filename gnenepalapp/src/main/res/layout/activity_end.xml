@@ -8,14 +8,14 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.yadaming.gnenepalapp.End" >
+    tools:context=".End" >
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:height="40sp"
         android:textSize="30sp"
-        android:paddingLeft="350dp"
+        android:paddingLeft="370dp"
         android:textColor="#000000"
         android:text="नभस्त "
         />
@@ -24,7 +24,7 @@
         android:layout_height="wrap_content"
         android:height="40sp"
         android:textSize="30sp"
-        android:paddingLeft="320dp"
+        android:paddingLeft="340dp"
         android:textColor="#000000"
         android:text="Namaste"
         />
@@ -34,7 +34,7 @@
         android:layout_height="wrap_content"
         android:height="40sp"
         android:textSize="30sp"
-        android:paddingLeft="310dp"
+        android:paddingLeft="330dp"
         android:textColor="#000000"
         android:text="Thank You"
         />

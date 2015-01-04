@@ -22,7 +22,6 @@ public class Hygiene extends Activity
         }
     }
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
@@ -30,9 +29,9 @@ public class Hygiene extends Activity
         setContentView(R.layout.activity_hygiene);
 
         SoundModule SoundModule = new SoundModule(this);
+        // Hygiene corresponds to slide 28 in the notes
         SoundModule.play(R.raw.slide_28);
     }
-
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu)
@@ -42,7 +41,6 @@ public class Hygiene extends Activity
         inflater.inflate(R.menu.initial, menu);
         return super.onCreateOptionsMenu(menu);
     }
-
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item)

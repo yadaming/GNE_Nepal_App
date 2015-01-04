@@ -30,6 +30,7 @@ public class Hand extends Activity
         setContentView(R.layout.activity_hand);
 
         SoundModule SoundModule = new SoundModule(this);
+        // Hand corresponds to slide 29 in the notes
         SoundModule.play(R.raw.slide_29_all_files_put_together);
     }
 

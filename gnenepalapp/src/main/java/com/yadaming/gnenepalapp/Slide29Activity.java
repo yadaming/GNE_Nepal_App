@@ -54,7 +54,8 @@ public class Slide29Activity extends Activity
     {
         if (!SoundModule.playing)
         {
-            Intent intent = new Intent(this, Slide30Activity.class);
+            // the WhyBeNutritious activity corresponds to slide 27 in the notes
+            Intent intent = new Intent(this, WhyBeNutritious.class);
             startActivity(intent);
             finish();
         }
