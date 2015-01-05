@@ -1,5 +1,4 @@
-<menu xmlns:android="http://schemas.android.com/apk/res/android"
-    >
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
         android:id="@+id/action_slide1"
@@ -53,11 +52,39 @@
         android:title="@string/title_activity_slide8"/>
 
     <item
+        android:id="@+id/action_slide9"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:icon="@drawable/flag_nepal"
+        android:title="@string/title_activity_slide9"/>
+
+    <item
+        android:id="@+id/action_slide10"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:icon="@drawable/flag_nepal"
+        android:title="@string/title_activity_slide10"/>
+
+    <item
+        android:id="@+id/action_slide11"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:icon="@drawable/flag_nepal"
+        android:title="@string/title_activity_slide11"/>
+
+    <item
         android:id="@+id/action_slide12"
         android:orderInCategory="100"
         android:showAsAction="never"
         android:icon="@drawable/flag_nepal"
         android:title="@string/title_activity_slide12"/>
+
+    <item
+        android:id="@+id/action_slide13"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:icon="@drawable/flag_nepal"
+        android:title="@string/title_activity_slide13"/>
 
     <item
         android:id="@+id/action_slide14"
