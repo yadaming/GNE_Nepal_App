@@ -50,6 +50,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/next"
+        android:background="#00FF00"
         android:onClick="nextMethodSL28" />
 
 </LinearLayout>

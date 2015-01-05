@@ -49,7 +49,7 @@ public class Slide25Activity extends Activity
     {
         super.onOptionsItemSelected(item);
         /* a switch case for the item selected from the menu. */
-        switch(item.getItemId())
+        switch (item.getItemId())
         {
             case R.id.action_slide1:
                 if (!SoundModule.playing) // if the audio is not playing then the next method can work
@@ -70,8 +70,7 @@ public class Slide25Activity extends Activity
                     Intent intent2 = new Intent(this, Slide2Activity.class);
                     startActivity(intent2);
                     finish();
-                }
-                else if (SoundModule.playing) // if the audio is playing: tell the user to wait
+                } else if (SoundModule.playing) // if the audio is playing: tell the user to wait
                 {
                     Toast.makeText(getBaseContext(), "You have to hear this!", Toast.LENGTH_SHORT).show();
                 }
@@ -80,7 +79,8 @@ public class Slide25Activity extends Activity
             case R.id.action_slide3:
                 if (!SoundModule.playing)
                 {
-                    Intent intent3 = new Intent(this, Slide3Activity.class);
+                    // Slide 3 became slide 4
+                    Intent intent3 = new Intent(this, Slide4Activity.class);
                     startActivity(intent3);
                     finish();
                 }
@@ -93,7 +93,7 @@ public class Slide25Activity extends Activity
             case R.id.action_slide4:
                 if (!SoundModule.playing)
                 {
-                    Intent intent4 = new Intent(this, Slide4Activity.class);
+                    Intent intent4 = new Intent(this, Slide5Activity.class);
                     startActivity(intent4);
                     finish();
                 }
@@ -106,11 +106,10 @@ public class Slide25Activity extends Activity
             case R.id.action_slide5:
                 if (!SoundModule.playing)
                 {
-                    Intent intent5 = new Intent(this, Slide5Activity.class);
+                    Intent intent5 = new Intent(this, Slide6Activity.class);
                     startActivity(intent5);
                     finish();
-                }
-                else if (SoundModule.playing) // if the audio is playing: tell the user to wait
+                } else if (SoundModule.playing) // if the audio is playing: tell the user to wait
                 {
                     Toast.makeText(getBaseContext(), "You have to hear this!", Toast.LENGTH_SHORT).show();
                 }
@@ -119,7 +118,7 @@ public class Slide25Activity extends Activity
             case R.id.action_slide6:
                 if (!SoundModule.playing)
                 {
-                    Intent intent6 = new Intent(this, Slide6Activity.class);
+                    Intent intent6 = new Intent(this, Slide7Activity.class);
                     startActivity(intent6);
                     finish();
                 }
@@ -128,10 +127,12 @@ public class Slide25Activity extends Activity
                     Toast.makeText(getBaseContext(), "You have to hear this!", Toast.LENGTH_SHORT).show();
                 }
                 break;
+
             case R.id.action_slide7:
                 if (!SoundModule.playing)
                 {
-                    Intent intent7 = new Intent(this, Slide7Activity.class);
+                    // Slide 7 in the notes is named Rice_none_circled in the code
+                    Intent intent7 = new Intent(this, Rice_none_circled.class);
                     startActivity(intent7);
                     finish();
                 }
@@ -140,10 +141,12 @@ public class Slide25Activity extends Activity
                     Toast.makeText(getBaseContext(), "You have to hear this!", Toast.LENGTH_SHORT).show();
                 }
                 break;
+
             case R.id.action_slide8:
                 if (!SoundModule.playing)
                 {
-                    Intent intent8 = new Intent(this, Slide8Activity.class);
+                    // Slide 8 is named Rice_main_circled in the code
+                    Intent intent8 = new Intent(this, Rice_main_circled.class);
                     startActivity(intent8);
                     finish();
                 }
@@ -152,10 +155,54 @@ public class Slide25Activity extends Activity
                     Toast.makeText(getBaseContext(), "You have to hear this!", Toast.LENGTH_SHORT).show();
                 }
                 break;
+
+            case R.id.action_slide9:
+                if (!SoundModule.playing)
+                {
+                    // Slide 9 is named Rice_rice_circled in the code
+                    Intent intent9 = new Intent(this, Rice_right_circled.class);
+                    startActivity(intent9);
+                    finish();
+                }
+                else if (SoundModule.playing) // if the audio is playing: tell the user to wait
+                {
+                    Toast.makeText(getBaseContext(), "You have to hear this!", Toast.LENGTH_SHORT).show();
+                }
+                break;
+
+
+            case R.id.action_slide10:
+                if (!SoundModule.playing)
+                {
+                    // Slide 10 is named Rice_rice_circled in the code
+                    Intent intent10 = new Intent(this, Slide8Activity.class);
+                    startActivity(intent10);
+                    finish();
+                }
+                else if (SoundModule.playing) // if the audio is playing: tell the user to wait
+                {
+                    Toast.makeText(getBaseContext(), "You have to hear this!", Toast.LENGTH_SHORT).show();
+                }
+                break;
+
+            case R.id.action_slide11:
+                if (!SoundModule.playing)
+                {
+                    // Slide 9 is named Rice_rice_circled in the code
+                    Intent intent11 = new Intent(this, Slide12Activity.class);
+                    startActivity(intent11);
+                    finish();
+                }
+                else if (SoundModule.playing) // if the audio is playing: tell the user to wait
+                {
+                    Toast.makeText(getBaseContext(), "You have to hear this!", Toast.LENGTH_SHORT).show();
+                }
+                break;
+
             case R.id.action_slide12:
                 if (!SoundModule.playing)
                 {
-                    Intent intent12 = new Intent(this, Slide12Activity.class);
+                    Intent intent12 = new Intent(this, Vitamin.class);
                     startActivity(intent12);
                     finish();
                 }
@@ -164,10 +211,24 @@ public class Slide25Activity extends Activity
                     Toast.makeText(getBaseContext(), "You have to hear this!", Toast.LENGTH_SHORT).show();
                 }
                 break;
+
+            case R.id.action_slide13:
+                if (!SoundModule.playing)
+                {
+                    Intent intent13 = new Intent(this, VitaminA.class);
+                    startActivity(intent13);
+                    finish();
+                }
+                else if (SoundModule.playing) // if the audio is playing: tell the user to wait
+                {
+                    Toast.makeText(getBaseContext(), "You have to hear this!", Toast.LENGTH_SHORT).show();
+                }
+                break;
+
             case R.id.action_slide14:
                 if (!SoundModule.playing)
                 {
-                    Intent intent14 = new Intent(this, Slide14Activity.class);
+                    Intent intent14 = new Intent(this, Iron.class);
                     startActivity(intent14);
                     finish();
                 }
@@ -176,10 +237,11 @@ public class Slide25Activity extends Activity
                     Toast.makeText(getBaseContext(), "You have to hear this!", Toast.LENGTH_SHORT).show();
                 }
                 break;
+
             case R.id.action_slide15:
                 if (!SoundModule.playing)
                 {
-                    Intent intent15 = new Intent(this, Slide15Activity.class);
+                    Intent intent15 = new Intent(this, Calcium.class);
                     startActivity(intent15);
                     finish();
                 }
@@ -188,10 +250,11 @@ public class Slide25Activity extends Activity
                     Toast.makeText(getBaseContext(), "You have to hear this!", Toast.LENGTH_SHORT).show();
                 }
                 break;
+
             case R.id.action_slide16:
                 if (!SoundModule.playing)
                 {
-                    Intent intent16 = new Intent(this, Slide16Activity.class);
+                    Intent intent16 = new Intent(this, Iodine.class);
                     startActivity(intent16);
                     finish();
                 }
@@ -200,10 +263,11 @@ public class Slide25Activity extends Activity
                     Toast.makeText(getBaseContext(), "You have to hear this!", Toast.LENGTH_SHORT).show();
                 }
                 break;
+
             case R.id.action_slide17:
                 if (!SoundModule.playing)
                 {
-                    Intent intent17 = new Intent(this, Slide17Activity.class);
+                    Intent intent17 = new Intent(this, Folate.class);
                     startActivity(intent17);
                     finish();
                 }
@@ -212,10 +276,11 @@ public class Slide25Activity extends Activity
                     Toast.makeText(getBaseContext(), "You have to hear this!", Toast.LENGTH_SHORT).show();
                 }
                 break;
+
             case R.id.action_slide18:
                 if (!SoundModule.playing)
                 {
-                    Intent intent18 = new Intent(this, Slide18Activity.class);
+                    Intent intent18 = new Intent(this, Cooking.class);
                     startActivity(intent18);
                     finish();
                 }
@@ -224,10 +289,11 @@ public class Slide25Activity extends Activity
                     Toast.makeText(getBaseContext(), "You have to hear this!", Toast.LENGTH_SHORT).show();
                 }
                 break;
+
             case R.id.action_slide19:
                 if (!SoundModule.playing)
                 {
-                    Intent intent19 = new Intent(this, Slide19Activity.class);
+                    Intent intent19 = new Intent(this, Slide20Activity.class);
                     startActivity(intent19);
                     finish();
                 }
@@ -236,10 +302,11 @@ public class Slide25Activity extends Activity
                     Toast.makeText(getBaseContext(), "You have to hear this!", Toast.LENGTH_SHORT).show();
                 }
                 break;
+
             case R.id.action_slide20:
                 if (!SoundModule.playing)
                 {
-                    Intent intent20 = new Intent(this, Slide20Activity.class);
+                    Intent intent20 = new Intent(this, SnackFoodActivity.class);
                     startActivity(intent20);
                     finish();
                 }
@@ -248,10 +315,24 @@ public class Slide25Activity extends Activity
                     Toast.makeText(getBaseContext(), "You have to hear this!", Toast.LENGTH_SHORT).show();
                 }
                 break;
+
+            case R.id.action_slide21:
+                if (!SoundModule.playing)
+                {
+                    Intent intent20 = new Intent(this, Alcohol.class);
+                    startActivity(intent20);
+                    finish();
+                }
+                else if (SoundModule.playing) // if the audio is playing: tell the user to wait
+                {
+                    Toast.makeText(getBaseContext(), "You have to hear this!", Toast.LENGTH_SHORT).show();
+                }
+                break;
+
             case R.id.action_slide22:
                 if (!SoundModule.playing)
                 {
-                    Intent intent22 = new Intent(this, Slide22Activity.class);
+                    Intent intent22 = new Intent(this, Slide24Activity.class);
                     startActivity(intent22);
                     finish();
                 }
@@ -260,10 +341,11 @@ public class Slide25Activity extends Activity
                     Toast.makeText(getBaseContext(), "You have to hear this!", Toast.LENGTH_SHORT).show();
                 }
                 break;
+
             case R.id.action_slide23:
                 if (!SoundModule.playing)
                 {
-                    Intent intent23 = new Intent(this, SnackFoodActivity.class);
+                    Intent intent23 = new Intent(this, Slide25Activity.class);
                     startActivity(intent23);
                     finish();
                 }
@@ -272,10 +354,11 @@ public class Slide25Activity extends Activity
                     Toast.makeText(getBaseContext(), "You have to hear this!", Toast.LENGTH_SHORT).show();
                 }
                 break;
+
             case R.id.action_slide24:
                 if (!SoundModule.playing)
                 {
-                    Intent intent24 = new Intent(this, Slide24Activity.class);
+                    Intent intent24 = new Intent(this, Slide26Activity.class);
                     startActivity(intent24);
                     finish();
                 }
@@ -284,22 +367,23 @@ public class Slide25Activity extends Activity
                     Toast.makeText(getBaseContext(), "You have to hear this!", Toast.LENGTH_SHORT).show();
                 }
                 break;
+
             case R.id.action_slide25:
                 if (!SoundModule.playing)
                 {
-                    Intent intent25 = new Intent(this, Slide25Activity.class);
+                    Intent intent25 = new Intent(this, Slide28Activity.class);
                     startActivity(intent25);
                     finish();
-                }
-                else if (SoundModule.playing) // if the audio is playing: tell the user to wait
+                } else if (SoundModule.playing) // if the audio is playing: tell the user to wait
                 {
                     Toast.makeText(getBaseContext(), "You have to hear this!", Toast.LENGTH_SHORT).show();
                 }
                 break;
+
             case R.id.action_slide26:
                 if (!SoundModule.playing)
                 {
-                    Intent intent26 = new Intent(this, Slide26Activity.class);
+                    Intent intent26 = new Intent(this, Slide29Activity.class);
                     startActivity(intent26);
                     finish();
                 }
@@ -308,10 +392,11 @@ public class Slide25Activity extends Activity
                     Toast.makeText(getBaseContext(), "You have to hear this!", Toast.LENGTH_SHORT).show();
                 }
                 break;
+
             case R.id.action_slide27:
                 if (!SoundModule.playing)
                 {
-                    Intent intent27 = new Intent(this, Slide27Activity.class);
+                    Intent intent27 = new Intent(this, WhyBeNutritious.class);
                     startActivity(intent27);
                     finish();
                 }
@@ -320,10 +405,11 @@ public class Slide25Activity extends Activity
                     Toast.makeText(getBaseContext(), "You have to hear this!", Toast.LENGTH_SHORT).show();
                 }
                 break;
+
             case R.id.action_slide28:
                 if (!SoundModule.playing)
                 {
-                    Intent intent28 = new Intent(this, Slide28Activity.class);
+                    Intent intent28 = new Intent(this, Hygiene.class);
                     startActivity(intent28);
                     finish();
                 }
@@ -332,10 +418,11 @@ public class Slide25Activity extends Activity
                     Toast.makeText(getBaseContext(), "You have to hear this!", Toast.LENGTH_SHORT).show();
                 }
                 break;
+
             case R.id.action_slide29:
                 if (!SoundModule.playing)
                 {
-                    Intent intent29 = new Intent(this, Slide29Activity.class);
+                    Intent intent29 = new Intent(this, Hand.class);
                     startActivity(intent29);
                     finish();
                 }
@@ -344,10 +431,11 @@ public class Slide25Activity extends Activity
                     Toast.makeText(getBaseContext(), "You have to hear this!", Toast.LENGTH_SHORT).show();
                 }
                 break;
+
             case R.id.action_slide30:
                 if (!SoundModule.playing)
                 {
-                    Intent intent30 = new Intent(this, Slide30Activity.class);
+                    Intent intent30 = new Intent(this, End.class);
                     startActivity(intent30);
                     finish();
                 }
@@ -356,9 +444,11 @@ public class Slide25Activity extends Activity
                     Toast.makeText(getBaseContext(), "You have to hear this!", Toast.LENGTH_SHORT).show();
                 }
                 break;
+
             default:
                 return super.onOptionsItemSelected(item);
         }
         return true;
     }
+
 }

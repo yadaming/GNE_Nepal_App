@@ -32,6 +32,7 @@
         android:text="@string/next"
         android:onClick="nextMethodSL7"
         android:layout_marginLeft="16dp"
+        android:background="#00ff00"
         android:layout_marginRight="16dp"/>
     </LinearLayout>
 

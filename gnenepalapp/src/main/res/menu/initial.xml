@@ -134,7 +134,12 @@
         android:showAsAction="never"
         android:icon="@drawable/flag_nepal"
         android:title="@string/title_activity_slide20"/>
-
+    <item
+        android:id="@+id/action_slide21"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:icon="@drawable/flag_nepal"
+        android:title="@string/title_activity_slide21"/>
     <item
         android:id="@+id/action_slide22"
         android:orderInCategory="100"

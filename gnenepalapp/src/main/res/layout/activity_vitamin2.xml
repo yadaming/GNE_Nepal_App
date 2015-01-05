@@ -16,7 +16,7 @@
         android:textSize="30sp"
         android:textStyle="bold"
         android:textColor="#22316C"
-        android:paddingLeft="300dp"
+        android:paddingLeft="320dp"
         android:text="शबटाशभन ‘ए’"
     />
 
@@ -25,7 +25,7 @@
         android:layout_height="wrap_content"
         android:height="40dp"
         android:textSize="30sp"
-        android:paddingLeft="40dp"
+        android:paddingLeft="80dp"
         android:text="यतन्धोको योकथाभका साथसाथै अरू सॊक्रभणसॊग रड्न सहमोग "
     />
 
@@ -99,7 +99,7 @@
         android:layout_height="wrap_content"
         android:height="40dp"
         android:textSize="30sp"
-        android:paddingLeft="60dp"
+        android:paddingLeft="80dp"
         android:text="गाजय य अन्म ऩहें रा परपूर तथा तयकायीभा अधधक भात्राभा"
     />
 
@@ -109,7 +109,7 @@
         android:layout_height="wrap_content"
         android:height="40dp"
         android:textSize="30sp"
-        android:paddingLeft="250dp"
+        android:paddingLeft="280dp"
         android:text="शबटाशभन ‘ए’ ऩाइन्ि "
     />
 

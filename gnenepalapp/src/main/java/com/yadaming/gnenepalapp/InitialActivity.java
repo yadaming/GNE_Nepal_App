@@ -258,7 +258,7 @@ public class InitialActivity extends Activity {
             case R.id.action_slide15:
                 if (!SoundModule.playing)
                 {
-                    Intent intent15 = new Intent(this, Slide15Activity.class);
+                    Intent intent15 = new Intent(this, Calcium.class);
                     startActivity(intent15);
                     finish();
                 }
@@ -269,88 +269,126 @@ public class InitialActivity extends Activity {
                 break;
 
             case R.id.action_slide16:
-                if (!SoundModule.playing) {
-                    Intent intent16 = new Intent(this, Slide16Activity.class);
+                if (!SoundModule.playing)
+                {
+                    Intent intent16 = new Intent(this, Iodine.class);
                     startActivity(intent16);
                     finish();
-                } else if (SoundModule.playing) // if the audio is playing: tell the user to wait
+                }
+                else if (SoundModule.playing) // if the audio is playing: tell the user to wait
                 {
                     Toast.makeText(getBaseContext(), "You have to hear this!", Toast.LENGTH_SHORT).show();
                 }
                 break;
+
             case R.id.action_slide17:
-                if (!SoundModule.playing) {
-                    Intent intent17 = new Intent(this, Slide17Activity.class);
+                if (!SoundModule.playing)
+                {
+                    Intent intent17 = new Intent(this, Folate.class);
                     startActivity(intent17);
                     finish();
-                } else if (SoundModule.playing) // if the audio is playing: tell the user to wait
+                }
+                else if (SoundModule.playing) // if the audio is playing: tell the user to wait
                 {
                     Toast.makeText(getBaseContext(), "You have to hear this!", Toast.LENGTH_SHORT).show();
                 }
                 break;
+
             case R.id.action_slide18:
-                if (!SoundModule.playing) {
-                    Intent intent18 = new Intent(this, Slide18Activity.class);
+                if (!SoundModule.playing)
+                {
+                    Intent intent18 = new Intent(this, Cooking.class);
                     startActivity(intent18);
                     finish();
-                } else if (SoundModule.playing) // if the audio is playing: tell the user to wait
+                }
+                else if (SoundModule.playing) // if the audio is playing: tell the user to wait
                 {
                     Toast.makeText(getBaseContext(), "You have to hear this!", Toast.LENGTH_SHORT).show();
                 }
                 break;
+
             case R.id.action_slide19:
-                if (!SoundModule.playing) {
-                    Intent intent19 = new Intent(this, Slide19Activity.class);
+                if (!SoundModule.playing)
+                {
+                    Intent intent19 = new Intent(this, Slide20Activity.class);
                     startActivity(intent19);
                     finish();
-                } else if (SoundModule.playing) // if the audio is playing: tell the user to wait
+                }
+                else if (SoundModule.playing) // if the audio is playing: tell the user to wait
                 {
                     Toast.makeText(getBaseContext(), "You have to hear this!", Toast.LENGTH_SHORT).show();
                 }
                 break;
+
             case R.id.action_slide20:
-                if (!SoundModule.playing) {
-                    Intent intent20 = new Intent(this, Slide20Activity.class);
+                if (!SoundModule.playing)
+                {
+                    Intent intent20 = new Intent(this, SnackFoodActivity.class);
                     startActivity(intent20);
                     finish();
-                } else if (SoundModule.playing) // if the audio is playing: tell the user to wait
+                }
+                else if (SoundModule.playing) // if the audio is playing: tell the user to wait
                 {
                     Toast.makeText(getBaseContext(), "You have to hear this!", Toast.LENGTH_SHORT).show();
                 }
                 break;
+
+            case R.id.action_slide21:
+                if (!SoundModule.playing)
+                {
+                    Intent intent20 = new Intent(this, Alcohol.class);
+                    startActivity(intent20);
+                    finish();
+                }
+                else if (SoundModule.playing) // if the audio is playing: tell the user to wait
+                {
+                    Toast.makeText(getBaseContext(), "You have to hear this!", Toast.LENGTH_SHORT).show();
+                }
+                break;
+
             case R.id.action_slide22:
-                if (!SoundModule.playing) {
-                    Intent intent22 = new Intent(this, Slide22Activity.class);
+                if (!SoundModule.playing)
+                {
+                    Intent intent22 = new Intent(this, Slide24Activity.class);
                     startActivity(intent22);
                     finish();
-                } else if (SoundModule.playing) // if the audio is playing: tell the user to wait
+                }
+                else if (SoundModule.playing) // if the audio is playing: tell the user to wait
                 {
                     Toast.makeText(getBaseContext(), "You have to hear this!", Toast.LENGTH_SHORT).show();
                 }
                 break;
+
             case R.id.action_slide23:
-                if (!SoundModule.playing) {
-                    Intent intent23 = new Intent(this, SnackFoodActivity.class);
+                if (!SoundModule.playing)
+                {
+                    Intent intent23 = new Intent(this, Slide25Activity.class);
                     startActivity(intent23);
                     finish();
-                } else if (SoundModule.playing) // if the audio is playing: tell the user to wait
+                }
+                else if (SoundModule.playing) // if the audio is playing: tell the user to wait
                 {
                     Toast.makeText(getBaseContext(), "You have to hear this!", Toast.LENGTH_SHORT).show();
                 }
                 break;
+
             case R.id.action_slide24:
-                if (!SoundModule.playing) {
-                    Intent intent24 = new Intent(this, Slide24Activity.class);
+                if (!SoundModule.playing)
+                {
+                    Intent intent24 = new Intent(this, Slide26Activity.class);
                     startActivity(intent24);
                     finish();
-                } else if (SoundModule.playing) // if the audio is playing: tell the user to wait
+                }
+                else if (SoundModule.playing) // if the audio is playing: tell the user to wait
                 {
                     Toast.makeText(getBaseContext(), "You have to hear this!", Toast.LENGTH_SHORT).show();
                 }
                 break;
+
             case R.id.action_slide25:
-                if (!SoundModule.playing) {
-                    Intent intent25 = new Intent(this, Slide25Activity.class);
+                if (!SoundModule.playing)
+                {
+                    Intent intent25 = new Intent(this, Slide28Activity.class);
                     startActivity(intent25);
                     finish();
                 } else if (SoundModule.playing) // if the audio is playing: tell the user to wait
@@ -358,56 +396,72 @@ public class InitialActivity extends Activity {
                     Toast.makeText(getBaseContext(), "You have to hear this!", Toast.LENGTH_SHORT).show();
                 }
                 break;
+
             case R.id.action_slide26:
-                if (!SoundModule.playing) {
-                    Intent intent26 = new Intent(this, Slide26Activity.class);
+                if (!SoundModule.playing)
+                {
+                    Intent intent26 = new Intent(this, Slide29Activity.class);
                     startActivity(intent26);
                     finish();
-                } else if (SoundModule.playing) // if the audio is playing: tell the user to wait
+                }
+                else if (SoundModule.playing) // if the audio is playing: tell the user to wait
                 {
                     Toast.makeText(getBaseContext(), "You have to hear this!", Toast.LENGTH_SHORT).show();
                 }
                 break;
+
             case R.id.action_slide27:
-                if (!SoundModule.playing) {
-                    Intent intent27 = new Intent(this, Slide27Activity.class);
+                if (!SoundModule.playing)
+                {
+                    Intent intent27 = new Intent(this, WhyBeNutritious.class);
                     startActivity(intent27);
                     finish();
-                } else if (SoundModule.playing) // if the audio is playing: tell the user to wait
+                }
+                else if (SoundModule.playing) // if the audio is playing: tell the user to wait
                 {
                     Toast.makeText(getBaseContext(), "You have to hear this!", Toast.LENGTH_SHORT).show();
                 }
                 break;
+
             case R.id.action_slide28:
-                if (!SoundModule.playing) {
-                    Intent intent28 = new Intent(this, Slide28Activity.class);
+                if (!SoundModule.playing)
+                {
+                    Intent intent28 = new Intent(this, Hygiene.class);
                     startActivity(intent28);
                     finish();
-                } else if (SoundModule.playing) // if the audio is playing: tell the user to wait
+                }
+                else if (SoundModule.playing) // if the audio is playing: tell the user to wait
                 {
                     Toast.makeText(getBaseContext(), "You have to hear this!", Toast.LENGTH_SHORT).show();
                 }
                 break;
+
             case R.id.action_slide29:
-                if (!SoundModule.playing) {
-                    Intent intent29 = new Intent(this, Slide29Activity.class);
+                if (!SoundModule.playing)
+                {
+                    Intent intent29 = new Intent(this, Hand.class);
                     startActivity(intent29);
                     finish();
-                } else if (SoundModule.playing) // if the audio is playing: tell the user to wait
+                }
+                else if (SoundModule.playing) // if the audio is playing: tell the user to wait
                 {
                     Toast.makeText(getBaseContext(), "You have to hear this!", Toast.LENGTH_SHORT).show();
                 }
                 break;
+
             case R.id.action_slide30:
-                if (!SoundModule.playing) {
-                    Intent intent30 = new Intent(this, Slide30Activity.class);
+                if (!SoundModule.playing)
+                {
+                    Intent intent30 = new Intent(this, End.class);
                     startActivity(intent30);
                     finish();
-                } else if (SoundModule.playing) // if the audio is playing: tell the user to wait
+                }
+                else if (SoundModule.playing) // if the audio is playing: tell the user to wait
                 {
                     Toast.makeText(getBaseContext(), "You have to hear this!", Toast.LENGTH_SHORT).show();
                 }
                 break;
+
             default:
                 return super.onOptionsItemSelected(item);
         }

@@ -77,14 +77,30 @@ public class Slide12Activity extends Activity {
             fileIO fileio = new fileIO();
             fileio.write(filename, filecontent);
         }
+
+        if (!SoundModule.playing) // if the audio is not playing then the next method can work
+        {
+            //Intent intent = new Intent(this, testActivity.class);
+            Intent intent = new Intent(this, Vitamin.class);
+            startActivity(intent);
+            finish();
+        }
+
+        if (SoundModule.playing)
+        {
+            Toast.makeText(getBaseContext(), "You have to hear this!", Toast.LENGTH_SHORT).show();
+        }
     }
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState)
+    {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_slide12);
+
         SoundModule SoundModule = new SoundModule(this);
-        SoundModule.play(R.raw.vrp_slide12);
+        SoundModule.play(R.raw.slide_12);
+
         greensCheckBox = (CheckBox) findViewById(R.id.greensCheckBox);
         oilsCheckBox = (CheckBox) findViewById(R.id.oilsCheckbox);
         cauliflowerCheckBox = (CheckBox) findViewById(R.id.cauliflowerCheckbox);
