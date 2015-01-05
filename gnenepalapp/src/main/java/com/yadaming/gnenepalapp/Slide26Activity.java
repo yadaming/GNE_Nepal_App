@@ -11,16 +11,17 @@ import android.widget.Toast;
 
 public class Slide26Activity extends Activity
 {
-    CircleView circle;
+    //CircleView circle;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
 
+        /*
+        This would have been cool. *sigh* maybe one day
         circle = new CircleView(this);
         circle.setBackgroundResource(R.drawable.nepal_kitchen);
-
         circle.setOnClickListener(
                 new View.OnClickListener()
                 {
@@ -32,11 +33,14 @@ public class Slide26Activity extends Activity
                     }
                 }
         );
-
         setContentView(circle);
+        */
+
+        setContentView(R.layout.activity_slide26);
+
         SoundModule SoundModule = new SoundModule(this);
         // play the start sound and the question
-        // Slide 26 corresonds to slide 24 in the notes
+        // Slide 26 corresponds to slide 24 in the notes
         SoundModule.play(R.raw.slide_24_start_and_question);
     }
 
@@ -45,13 +49,30 @@ public class Slide26Activity extends Activity
     {
         if (!SoundModule.playing)
         {
-            // the next slide is slide 29 - which corresponds to slide 25 in the notes (or slide 28 in the pdf)
+            // the next slide is slide 28 - which corresponds to slide 25 in the notes (or slide 28 in the pdf)
             Intent intent = new Intent(this, Slide28Activity.class);
             startActivity(intent);
             finish();
         }
     }
 
+    public void rightSlide26(View view)
+    {
+        if (!SoundModule.playing)
+        {
+            SoundModule right_sound = new SoundModule(this);
+            right_sound.play(R.raw.slide_24_if_answer_right);
+        }
+    }
+
+    public void wrongSlide26(View view)
+    {
+        if (!SoundModule.playing)
+        {
+            SoundModule wrong_sound = new SoundModule(this);
+            wrong_sound.play(R.raw.slide_24_if_answer_wrong);
+        }
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu)

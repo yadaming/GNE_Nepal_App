@@ -8,21 +8,61 @@
               android:paddingLeft="@dimen/activity_horizontal_margin"
               android:paddingRight="@dimen/activity_horizontal_margin"
               android:paddingTop="@dimen/activity_vertical_margin"
-              tools:context=".Slide26Activity" >
+              tools:context=".Slide26Activity"
+              android:background="@drawable/nepal_kitchen">
 
-    <ImageView
-        android:id="@+id/imageView1"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="0dip"
-        android:layout_weight="1"
-        android:src="@drawable/slide26photo" />
+        android:layout_height="wrap_content"
+        android:layout_weight="15"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:height="20dp"
+                android:width="20dp"
+                android:layout_weight="15"
+                android:background="#fff9ff2f"
+                android:onClick="rightSlide26"
+            />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:width="250dp"
+                android:layout_marginRight="100dp"
+                android:layout_marginTop="200dp"
+                android:background="#fff9ff2f"
+                android:onClick="wrongSlide26"
+            />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginTop="100dp"
+                android:layout_marginLeft="70dp"
+                android:layout_marginRight="500dp"
+                android:background="#fff9ff2f"
+                android:onClick="wrongSlide26"
+            />
+        </LinearLayout>
+    </LinearLayout>
 
     <Button
-        android:id="@+id/yesButton"
         android:layout_width="match_parent"
-        android:layout_height="0dip"
+        android:layout_height="wrap_content"
         android:layout_weight=".15"
         android:text="@string/next"
+        android:background="#00FF00"
         android:onClick="nextMethodSL26" />
 
 </LinearLayout>

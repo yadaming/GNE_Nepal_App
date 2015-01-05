@@ -10,16 +10,20 @@ import android.view.View;
 import android.widget.ImageButton;
 import android.widget.Toast;
 
-public class Slide27Activity extends Activity {
-    public void nextMethodSL27(View view) {
-        if (SoundModule.playing == false) {
+public class Slide27Activity extends Activity
+{
+    public void nextMethodSL27(View view)
+    {
+        if (SoundModule.playing == false)
+        {
             Intent intent = new Intent(this, Slide28Activity.class);
             startActivity(intent);
             finish();
         }
     }
 
-    public void choseRight(View view) {
+    public void choseRight(View view)
+    {
         ImageButton starButton;
         starButton = (ImageButton) findViewById(R.id.imageButton1Star);
         starButton.setVisibility(View.VISIBLE);
@@ -27,10 +31,10 @@ public class Slide27Activity extends Activity {
     }
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState)
+    {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_slide27);
-
     }
 
     @Override
