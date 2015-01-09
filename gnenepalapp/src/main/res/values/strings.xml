@@ -49,17 +49,16 @@
     <string name="title_activity_slide29">Slide 29</string>
     <string name="title_activity_slide30">Slide 30</string>
 
-
-    <string name="title_activity_vitamin">Vitamin</string>
-    <string name="title_activity_iron">Iron</string>
-    <string name="title_activity_calcium">Calcium</string>
-    <string name="title_activity_iodine">Iodine</string>
-    <string name="title_activity_folate">Folate</string>
-    <string name="title_activity_cooking">Cooking</string>
-    <string name="title_activity_alcohol">Alcohol</string>
-    <string name="title_activity_why_be_nutritious">WhyBeNutritious</string>
-    <string name="title_activity_hygiene">Hygiene</string>
-    <string name="title_activity_hand">Hand</string>
-    <string name="title_activity_end">End</string>
+    <string name="title_activity_vitamin">Slide 12 - Vitamin</string>
+    <string name="title_activity_iron">Slide 14 - Iron</string>
+    <string name="title_activity_calcium">Slide 15 - Calcium</string>
+    <string name="title_activity_iodine">Slide 16 - Iodine</string>
+    <string name="title_activity_folate">Slide 17 - Folate</string>
+    <string name="title_activity_cooking">Slide 18 - Cooking</string>
+    <string name="title_activity_alcohol">Slide 21 - Alcohol</string>
+    <string name="title_activity_why_be_nutritious">Slide 27</string>
+    <string name="title_activity_hygiene">Slide 28 - Hygiene</string>
+    <string name="title_activity_hand">Slide 29</string>
+    <string name="title_activity_end">Slide 30 - End</string>
 
 </resources>
