@@ -141,67 +141,83 @@
         </activity>
         <activity
             android:name=".testActivity"
-            android:label="@string/title_activity_test" >
+            android:label="@string/title_activity_test"
+            android:screenOrientation="landscape">
         </activity>
         <activity
             android:name=".Rice_none_circled"
-            android:label="@string/title_activity_rice_none_circled" >
+            android:label="@string/title_activity_rice_none_circled"
+            android:screenOrientation="landscape">
         </activity>
         <activity
             android:name=".Rice_main_circled"
-            android:label="@string/title_activity_rice_main_circled" >
+            android:label="@string/title_activity_rice_main_circled"
+            android:screenOrientation="landscape">
         </activity>
         <activity
             android:name=".Rice_right_circled"
-            android:label="@string/title_activity_rice_right_circled" >
+            android:label="@string/title_activity_rice_right_circled"
+            android:screenOrientation="landscape">
         </activity>
         <activity
             android:name=".Vitamin"
-            android:label="@string/title_activity_vitamin" >
+            android:label="@string/title_activity_vitamin"
+            android:screenOrientation="landscape">
         </activity>
         <activity
             android:name=".VitaminA"
-            android:label="@string/title_activity_vitamin" >
+            android:label="@string/title_activity_vitamin"
+            android:screenOrientation="landscape">
         </activity>
         <activity
             android:name=".Iron"
-            android:label="@string/title_activity_iron" >
+            android:label="@string/title_activity_iron"
+            android:screenOrientation="landscape">
         </activity>
         <activity
             android:name=".Calcium"
-            android:label="@string/title_activity_calcium" >
+            android:label="@string/title_activity_calcium"
+            android:screenOrientation="landscape">
         </activity>
         <activity
             android:name=".Iodine"
-            android:label="@string/title_activity_iodine" >
+            android:label="@string/title_activity_iodine"
+            android:screenOrientation="landscape">
         </activity>
         <activity
             android:name=".Folate"
-            android:label="@string/title_activity_folate" >
+            android:label="@string/title_activity_folate"
+            android:screenOrientation="landscape">
         </activity>
         <activity
             android:name=".Cooking"
-            android:label="@string/title_activity_cooking" >
+            android:label="@string/title_activity_cooking"
+            android:screenOrientation="landscape">
         </activity>
         <activity
             android:name=".Alcohol"
-            android:label="@string/title_activity_alcohol" >
+            android:label="@string/title_activity_alcohol"
+            android:screenOrientation="landscape">
         </activity>
         <activity
             android:name=".WhyBeNutritious"
-            android:label="@string/title_activity_why_be_nutritious" >
+            android:label="@string/title_activity_why_be_nutritious"
+            android:screenOrientation="landscape">
         </activity>
         <activity
             android:name=".Hygiene"
-            android:label="@string/title_activity_hygiene" >
+            android:label="@string/title_activity_hygiene"
+            android:screenOrientation="landscape">
         </activity>
         <activity
             android:name=".Hand"
-            android:label="@string/title_activity_hand" >
+            android:label="@string/title_activity_hand"
+            android:screenOrientation="landscape">
         </activity>
         <activity
             android:name=".End"
-            android:label="@string/title_activity_end" >
+            android:label="@string/title_activity_end"
+            android:screenOrientation="landscape">
         </activity>
     </application>
 
