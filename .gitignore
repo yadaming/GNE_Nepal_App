@@ -5,6 +5,4 @@
 .DS_Store
 /build
 ../.idea/dictionaries/doug.xml
-/gnenepalapp/gnenepalapp-release.apk
-/gnenepalapp/gnenepalapp.apk
-/gneneaplapp/build.gradle
+/gne_nepal_app/build.gradle
