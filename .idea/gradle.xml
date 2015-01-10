@@ -8,7 +8,7 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/gnenepalapp" />
+            <option value="$PROJECT_DIR$/gne_nepal_app" />
           </set>
         </option>
       </GradleProjectSettings>

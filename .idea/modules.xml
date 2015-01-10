@@ -4,7 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/GNENepalApp.iml" filepath="$PROJECT_DIR$/GNENepalApp.iml" />
       <module fileurl="file://$PROJECT_DIR$/GNE_Nepal_App.iml" filepath="$PROJECT_DIR$/GNE_Nepal_App.iml" />
-      <module fileurl="file://$PROJECT_DIR$/gnenepalapp/gnenepalapp.iml" filepath="$PROJECT_DIR$/gnenepalapp/gnenepalapp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gne_nepal_app/gne_nepal_app.iml" filepath="$PROJECT_DIR$/gne_nepal_app/gne_nepal_app.iml" />
     </modules>
   </component>
 </project>
