@@ -45,7 +45,7 @@ public class InitialActivity extends Activity {
         DateFormat dateFormatter = new SimpleDateFormat("yyyyMMdd hh:mm:ss");
         dateFormatter.setLenient(false);
         Date today = new Date();
-        String timestamp = dateFormatter.format(today);
+        String timestamp = "opened app: " + dateFormatter.format(today);
         String filename = "dataFile";
 
         fileIO fileio = new fileIO();

@@ -8,6 +8,8 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
+import java.text.*;
+import java.util.Date;
 
 
 public class End extends Activity
@@ -29,6 +31,15 @@ public class End extends Activity
 
         SoundModule SoundModule = new SoundModule(this);
         SoundModule.play(R.raw.slide_30);
+
+        DateFormat dateFormatter = new SimpleDateFormat("yyyyMMdd hh:mm:ss");
+        dateFormatter.setLenient(false);
+        Date today = new Date();
+        String timestamp = "closed app: " + dateFormatter.format(today);
+        String filename = "dataFile";
+
+        fileIO fileio = new fileIO();
+        fileio.write(filename, timestamp);
     }
 
 
