@@ -25,11 +25,6 @@
             android:screenOrientation="landscape" >
         </activity>
         <activity
-            android:name=".Slide3Activity"
-            android:label="@string/title_activity_slide3"
-            android:screenOrientation="landscape" >
-        </activity>
-        <activity
             android:name=".Slide4Activity"
             android:label="@string/title_activity_slide4"
             android:screenOrientation="landscape" >
@@ -60,43 +55,8 @@
             android:screenOrientation="landscape" >
         </activity>
         <activity
-            android:name=".Slide14Activity"
-            android:label="@string/title_activity_slide14"
-            android:screenOrientation="landscape" >
-        </activity>
-        <activity
-            android:name=".Slide15Activity"
-            android:label="@string/title_activity_slide15"
-            android:screenOrientation="landscape" >
-        </activity>
-        <activity
-            android:name=".Slide16Activity"
-            android:label="@string/title_activity_slide16"
-            android:screenOrientation="landscape" >
-        </activity>
-        <activity
-            android:name=".Slide17Activity"
-            android:label="@string/title_activity_slide17"
-            android:screenOrientation="landscape" >
-        </activity>
-        <activity
-            android:name=".Slide18Activity"
-            android:label="@string/title_activity_slide18"
-            android:screenOrientation="landscape" >
-        </activity>
-        <activity
-            android:name=".Slide19Activity"
-            android:label="@string/title_activity_slide19"
-            android:screenOrientation="landscape" >
-        </activity>
-        <activity
             android:name=".Slide20Activity"
             android:label="@string/title_activity_slide20"
-            android:screenOrientation="landscape" >
-        </activity>
-        <activity
-            android:name=".Slide22Activity"
-            android:label="@string/title_activity_slide22"
             android:screenOrientation="landscape" >
         </activity>
         <activity
@@ -120,11 +80,6 @@
             android:screenOrientation="landscape" >
         </activity>
         <activity
-            android:name=".Slide27Activity"
-            android:label="@string/title_activity_slide27"
-            android:screenOrientation="landscape" >
-        </activity>
-        <activity
             android:name=".Slide28Activity"
             android:label="@string/title_activity_slide28"
             android:screenOrientation="landscape" >
@@ -132,11 +87,6 @@
         <activity
             android:name=".Slide29Activity"
             android:label="@string/title_activity_slide29"
-            android:screenOrientation="landscape" >
-        </activity>
-        <activity
-            android:name=".Slide30Activity"
-            android:label="@string/title_activity_slide30"
             android:screenOrientation="landscape" >
         </activity>
         <activity
