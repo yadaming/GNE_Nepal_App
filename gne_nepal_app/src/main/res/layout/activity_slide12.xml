@@ -8,16 +8,17 @@
 
     <ImageView
         android:id="@+id/foodpic"
-        android:layout_width="wrap_content"
         android:layout_height="0dp"
-        android:layout_weight="0.5"
-        android:src="@drawable/slide_12_with_numbers" />
+        android:layout_width="fill_parent"
+        android:layout_weight="0.95"
+        android:src="@drawable/slide_12_with_numbers_downsized" />
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_gravity="center_horizontal">
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.05">
 
     <CheckBox
         android:id="@+id/greensCheckBox"

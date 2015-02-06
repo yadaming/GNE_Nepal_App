@@ -13,12 +13,6 @@
         android:icon="@drawable/flag_nepal"
         android:title="@string/title_activity_slide2"/>
     <item
-        android:id="@+id/action_slide3"
-        android:orderInCategory="100"
-        app:showAsAction="never"
-        android:icon="@drawable/flag_nepal"
-        android:title="@string/title_activity_slide3"/>
-    <item
         android:id="@+id/action_slide4"
         android:orderInCategory="100"
         app:showAsAction="never"
