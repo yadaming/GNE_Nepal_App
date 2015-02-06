@@ -4,5 +4,6 @@
 /.idea/libraries
 .DS_Store
 /build
+/gnenepalapp
 ../.idea/dictionaries/doug.xml
 /gne_nepal_app/build.gradle
