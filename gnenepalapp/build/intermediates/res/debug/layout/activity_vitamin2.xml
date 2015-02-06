@@ -1,0 +1,125 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.yadaming.gnenepalapp.VitaminA">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:height="40dp"
+        android:textSize="30sp"
+        android:paddingLeft="350dp"
+        android:text="शबटाशभन ‘ए’"
+    />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:height="40dp"
+        android:textSize="30sp"
+        android:paddingLeft="10dp"
+        android:text="यतन्धोको योकथाभका साथसाथै अरू सॊक्रभणसॊग रड्न सहमोग "
+    />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:height="40dp"
+        android:textSize="30sp"
+        android:paddingLeft="350dp"
+        android:text="गि"
+    />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/papaya"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/mixed_fruit"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/squash"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:height="40dp"
+        android:textSize="30sp"
+        android:paddingLeft="350dp"
+        android:text="Vitamin A"
+    />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/lettuce"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/carrots"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/bananas"/>
+    </LinearLayout>
+
+     <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:height="40dp"
+        android:textSize="30sp"
+        android:paddingLeft="60dp"
+        android:text="गाजय य अन्म ऩहें रा परपूर तथा तयकायीभा अधधक भात्राभा"
+    />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:height="40dp"
+        android:textSize="30sp"
+        android:paddingLeft="250dp"
+        android:text="शबटाशभन ‘ए’ ऩाइन्ि "
+    />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/yes"
+            android:background="#00FF00"
+            android:onClick="nextMethodVitaminA"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>
+<!-- From: file:/home/doug/Dropbox/nepalWorkingDirectory/Nepal_App_v2/GNE_Nepal_App/gnenepalapp/src/main/res/layout/activity_vitamin2.xml -->

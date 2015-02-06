@@ -1,0 +1,104 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:layout_weight="1"
+    tools:context=".Slide12Activity">
+
+    <ImageView
+        android:id="@+id/foodpic"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:src="@drawable/slide_12_with_numbers" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal">
+
+    <CheckBox
+        android:id="@+id/greensCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1"
+        android:paddingRight="20dp" />
+
+    <CheckBox
+        android:id="@+id/oilsCheckbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2"
+        android:paddingRight="20dp" />
+
+    <CheckBox
+        android:id="@+id/cauliflowerCheckbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3"
+        android:paddingRight="20dp" />
+
+    <CheckBox
+        android:id="@+id/onionCheckbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4"
+        android:paddingRight="20dp" />
+
+    <CheckBox
+        android:id="@+id/mangoCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5"
+        android:paddingRight="20dp" />
+
+    <CheckBox
+        android:id="@+id/carrotCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="6"
+        android:paddingRight="20dp" />
+
+    <CheckBox
+        android:id="@+id/beansCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="7"
+        android:paddingRight="20dp" />
+
+    <CheckBox
+        android:id="@+id/riceCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="8"
+        android:paddingRight="20dp" />
+
+    <CheckBox
+        android:id="@+id/potatoCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="9"
+        android:paddingRight="20dp" />
+
+    <CheckBox
+        android:id="@+id/herbsCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="10"
+        android:paddingRight="20dp" />
+
+    <Button
+        android:id="@+id/nextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:onClick="nextMethodSL12"
+        android:text="@string/next" />
+
+</LinearLayout>
+</LinearLayout>
+
+<!-- From: file:/home/doug/Dropbox/nepalWorkingDirectory/Nepal_App_v2/GNE_Nepal_App/gnenepalapp/src/main/res/layout/activity_slide12.xml -->

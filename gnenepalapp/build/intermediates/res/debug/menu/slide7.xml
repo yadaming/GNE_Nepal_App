@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/action_settings"/>
+
+</menu>
+<!-- From: file:/home/doug/Dropbox/nepalWorkingDirectory/Nepal_App_v2/GNE_Nepal_App/gnenepalapp/src/main/res/menu/slide7.xml -->

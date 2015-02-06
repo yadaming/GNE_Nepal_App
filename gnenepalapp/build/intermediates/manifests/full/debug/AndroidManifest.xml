@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.yadaming.gnenepalapp"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="21"
+        android:targetSdkVersion="21" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/flag_nepal"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.yadaming.gnenepalapp.InitialActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.yadaming.gnenepalapp.Slide2Activity"
+            android:label="@string/title_activity_slide2"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.yadaming.gnenepalapp.Slide3Activity"
+            android:label="@string/title_activity_slide3"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.yadaming.gnenepalapp.Slide4Activity"
+            android:label="@string/title_activity_slide4"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.yadaming.gnenepalapp.Slide5Activity"
+            android:label="@string/title_activity_slide5"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.yadaming.gnenepalapp.Slide6Activity"
+            android:label="@string/title_activity_slide6"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.yadaming.gnenepalapp.Slide7Activity"
+            android:label="@string/title_activity_slide7"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.yadaming.gnenepalapp.Slide8Activity"
+            android:label="@string/title_activity_slide8"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.yadaming.gnenepalapp.Slide12Activity"
+            android:label="@string/title_activity_slide12"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.yadaming.gnenepalapp.Slide14Activity"
+            android:label="@string/title_activity_slide14"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.yadaming.gnenepalapp.Slide15Activity"
+            android:label="@string/title_activity_slide15"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.yadaming.gnenepalapp.Slide16Activity"
+            android:label="@string/title_activity_slide16"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.yadaming.gnenepalapp.Slide17Activity"
+            android:label="@string/title_activity_slide17"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.yadaming.gnenepalapp.Slide18Activity"
+            android:label="@string/title_activity_slide18"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.yadaming.gnenepalapp.Slide19Activity"
+            android:label="@string/title_activity_slide19"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.yadaming.gnenepalapp.Slide20Activity"
+            android:label="@string/title_activity_slide20"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.yadaming.gnenepalapp.Slide22Activity"
+            android:label="@string/title_activity_slide22"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.yadaming.gnenepalapp.SnackFoodActivity"
+            android:label="@string/title_activity_slide23"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.yadaming.gnenepalapp.Slide24Activity"
+            android:label="@string/title_activity_slide24"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.yadaming.gnenepalapp.Slide25Activity"
+            android:label="@string/title_activity_slide25"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.yadaming.gnenepalapp.Slide26Activity"
+            android:label="@string/title_activity_slide26"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.yadaming.gnenepalapp.Slide27Activity"
+            android:label="@string/title_activity_slide27"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.yadaming.gnenepalapp.Slide28Activity"
+            android:label="@string/title_activity_slide28"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.yadaming.gnenepalapp.Slide29Activity"
+            android:label="@string/title_activity_slide29"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.yadaming.gnenepalapp.Slide30Activity"
+            android:label="@string/title_activity_slide30"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.yadaming.gnenepalapp.testActivity"
+            android:label="@string/title_activity_test" >
+        </activity>
+        <activity
+            android:name="com.yadaming.gnenepalapp.Rice_none_circled"
+            android:label="@string/title_activity_rice_none_circled" >
+        </activity>
+        <activity
+            android:name="com.yadaming.gnenepalapp.Rice_main_circled"
+            android:label="@string/title_activity_rice_main_circled" >
+        </activity>
+        <activity
+            android:name="com.yadaming.gnenepalapp.Rice_right_circled"
+            android:label="@string/title_activity_rice_right_circled" >
+        </activity>
+        <activity
+            android:name="com.yadaming.gnenepalapp.Vitamin"
+            android:label="@string/title_activity_vitamin" >
+        </activity>
+        <activity
+            android:name="com.yadaming.gnenepalapp.VitaminA"
+            android:label="@string/title_activity_vitamin" >
+        </activity>
+        <activity
+            android:name="com.yadaming.gnenepalapp.Iron"
+            android:label="@string/title_activity_iron" >
+        </activity>
+        <activity
+            android:name="com.yadaming.gnenepalapp.Calcium"
+            android:label="@string/title_activity_calcium" >
+        </activity>
+        <activity
+            android:name="com.yadaming.gnenepalapp.Iodine"
+            android:label="@string/title_activity_iodine" >
+        </activity>
+        <activity
+            android:name="com.yadaming.gnenepalapp.Folate"
+            android:label="@string/title_activity_folate" >
+        </activity>
+        <activity
+            android:name="com.yadaming.gnenepalapp.Cooking"
+            android:label="@string/title_activity_cooking" >
+        </activity>
+        <activity
+            android:name="com.yadaming.gnenepalapp.Alcohol"
+            android:label="@string/title_activity_alcohol" >
+        </activity>
+    </application>
+
+</manifest>
