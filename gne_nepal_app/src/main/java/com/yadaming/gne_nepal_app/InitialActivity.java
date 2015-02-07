@@ -96,8 +96,9 @@ public class InitialActivity extends Activity {
             case R.id.action_slide3:
                 if (!SoundModule.playing)
                 {
-                    // Slide 3 became slide 4
+                    // Slide 3 plays Slide 4
                     Intent intent3 = new Intent(this, Slide4Activity.class);
+                    //                                --------------
                     startActivity(intent3);
                     finish();
                 }

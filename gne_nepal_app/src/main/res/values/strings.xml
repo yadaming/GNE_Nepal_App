@@ -9,24 +9,17 @@
 
     <string name="title_activity_test">testActivity</string>
     <string name="title_activity_main">MainActivity</string>
+
     <string name="title_activity_slide1">Slide 1</string>
     <string name="title_activity_slide2">Slide 2</string>
     <string name="title_activity_slide3">Slide 3</string>
-    <string name="title_activity_slide4">Slide 3</string>
-    <string name="title_activity_slide5">Slide 4</string>
-    <string name="title_activity_slide6">Slide 5</string>
-
-
-    <string name="title_activity_rice_none_circled">Slide 7</string>
-    <string name="title_activity_rice_main_circled">Slide 8</string>
-    <string name="title_activity_rice_right_circled">Slide 9</string>
-
-    <string name="title_activity_slide7">Slide 6</string>
-    <string name="title_activity_slide8">Slide 10</string>
-    <string name="title_activity_slide9">Slide 11</string>
-    <string name="title_activity_slide10">Slide 12</string>
-
-
+    <string name="title_activity_slide4">Slide 4</string>
+    <string name="title_activity_slide5">Slide 5</string>
+    <string name="title_activity_slide6">Slide 6</string>
+    <string name="title_activity_slide7">Slide 7</string>
+    <string name="title_activity_slide8">Slide 8</string>
+    <string name="title_activity_slide9">Slide 9</string>
+    <string name="title_activity_slide10">Slide 10</string>
     <string name="title_activity_slide11">Slide 11</string>
     <string name="title_activity_slide12">Slide 12</string>
     <string name="title_activity_slide13">Slide 13</string>
@@ -41,13 +34,16 @@
     <string name="title_activity_slide22">Slide 22</string>
     <string name="title_activity_slide23">Slide 23</string>
     <string name="title_activity_slide24">Slide 24</string>
-
     <string name="title_activity_slide25">Slide 25</string>
     <string name="title_activity_slide26">Slide 26</string>
     <string name="title_activity_slide27">Slide 27</string>
     <string name="title_activity_slide28">Slide 28</string>
     <string name="title_activity_slide29">Slide 29</string>
     <string name="title_activity_slide30">Slide 30</string>
+
+    <string name="title_activity_rice_none_circled">Slide 7</string>
+    <string name="title_activity_rice_main_circled">Slide 8</string>
+    <string name="title_activity_rice_right_circled">Slide 9</string>
 
     <string name="title_activity_vitamin">Vitamin</string>
     <string name="title_activity_iron">Slide 14 - Iron</string>

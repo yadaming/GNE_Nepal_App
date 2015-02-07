@@ -15,7 +15,6 @@
             android:screenOrientation="landscape" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -26,149 +25,158 @@
         </activity>
         <activity
             android:name=".Slide4Activity"
-            android:label="@string/title_activity_slide4"
+            android:label="@string/title_activity_slide3"
             android:screenOrientation="landscape" >
         </activity>
         <activity
             android:name=".Slide5Activity"
-            android:label="@string/title_activity_slide5"
+            android:label="@string/title_activity_slide4"
             android:screenOrientation="landscape" >
         </activity>
         <activity
             android:name=".Slide6Activity"
-            android:label="@string/title_activity_slide6"
+            android:label="@string/title_activity_slide5"
             android:screenOrientation="landscape" >
         </activity>
         <activity
             android:name=".Slide7Activity"
-            android:label="@string/title_activity_slide7"
+            android:label="@string/title_activity_slide6"
             android:screenOrientation="landscape" >
         </activity>
+
+        <activity
+            android:name=".Rice_none_circled"
+            android:label="@string/title_activity_slide7"
+            android:screenOrientation="landscape">
+        </activity>
+        <activity
+            android:name=".Rice_main_circled"
+            android:label="@string/title_activity_slide8"
+            android:screenOrientation="landscape">
+        </activity>
+        <activity
+            android:name=".Rice_right_circled"
+            android:label="@string/title_activity_slide9"
+            android:screenOrientation="landscape">
+        </activity>
+
         <activity
             android:name=".Slide8Activity"
-            android:label="@string/title_activity_slide8"
+            android:label="@string/title_activity_slide10"
             android:screenOrientation="landscape" >
         </activity>
+
         <activity
             android:name=".Slide12Activity"
-            android:label="@string/title_activity_slide12"
+            android:label="@string/title_activity_slide11"
             android:screenOrientation="landscape" >
         </activity>
+
+        <activity
+            android:name=".Vitamin"
+            android:label="@string/title_activity_slide12"
+            android:screenOrientation="landscape">
+        </activity>
+        <activity
+            android:name=".VitaminA"
+            android:label="@string/title_activity_slide13"
+            android:screenOrientation="landscape">
+        </activity>
+        <activity
+            android:name=".Iron"
+            android:label="@string/title_activity_slide14"
+            android:screenOrientation="landscape">
+        </activity>
+        <activity
+            android:name=".Calcium"
+            android:label="@string/title_activity_slide15"
+            android:screenOrientation="landscape">
+        </activity>
+        <activity
+            android:name=".Iodine"
+            android:label="@string/title_activity_slide16"
+            android:screenOrientation="landscape">
+        </activity>
+        <activity
+            android:name=".Folate"
+            android:label="@string/title_activity_slide17"
+            android:screenOrientation="landscape">
+        </activity>
+        <activity
+            android:name=".Cooking"
+            android:label="@string/title_activity_slide18"
+            android:screenOrientation="landscape">
+        </activity>
+
         <activity
             android:name=".Slide20Activity"
-            android:label="@string/title_activity_slide20"
+            android:label="@string/title_activity_slide19"
             android:screenOrientation="landscape" >
         </activity>
         <activity
             android:name=".SnackFoodActivity"
-            android:label="@string/title_activity_slide23"
+            android:label="@string/title_activity_slide20"
             android:screenOrientation="landscape" >
         </activity>
         <activity
+            android:name=".Alcohol"
+            android:label="@string/title_activity_slide20"
+            android:screenOrientation="landscape">
+        </activity>
+
+        <activity
             android:name=".Slide24Activity"
-            android:label="@string/title_activity_slide24"
+            android:label="@string/title_activity_slide22"
             android:screenOrientation="landscape" >
         </activity>
         <activity
             android:name=".Slide25Activity"
-            android:label="@string/title_activity_slide25"
+            android:label="@string/title_activity_slide23"
             android:screenOrientation="landscape" >
         </activity>
         <activity
             android:name=".Slide26Activity"
-            android:label="@string/title_activity_slide26"
+            android:label="@string/title_activity_slide24"
             android:screenOrientation="landscape" >
         </activity>
         <activity
             android:name=".Slide28Activity"
-            android:label="@string/title_activity_slide28"
+            android:label="@string/title_activity_slide25"
             android:screenOrientation="landscape" >
         </activity>
         <activity
             android:name=".Slide29Activity"
-            android:label="@string/title_activity_slide29"
+            android:label="@string/title_activity_slide26"
             android:screenOrientation="landscape" >
         </activity>
+
+        <activity
+            android:name=".WhyBeNutritious"
+            android:label="@string/title_activity_slide27"
+            android:screenOrientation="landscape">
+        </activity>
+        <activity
+            android:name=".Hygiene"
+            android:label="@string/title_activity_slide28"
+            android:screenOrientation="landscape">
+        </activity>
+        <activity
+            android:name=".Hand"
+            android:label="@string/title_activity_slide29"
+            android:screenOrientation="landscape">
+        </activity>
+        <activity
+            android:name=".End"
+            android:label="@string/title_activity_slide30"
+            android:screenOrientation="landscape">
+        </activity>
+
         <activity
             android:name=".testActivity"
             android:label="@string/title_activity_test"
             android:screenOrientation="landscape">
         </activity>
-        <activity
-            android:name=".Rice_none_circled"
-            android:label="@string/title_activity_rice_none_circled"
-            android:screenOrientation="landscape">
-        </activity>
-        <activity
-            android:name=".Rice_main_circled"
-            android:label="@string/title_activity_rice_main_circled"
-            android:screenOrientation="landscape">
-        </activity>
-        <activity
-            android:name=".Rice_right_circled"
-            android:label="@string/title_activity_rice_right_circled"
-            android:screenOrientation="landscape">
-        </activity>
-        <activity
-            android:name=".Vitamin"
-            android:label="@string/title_activity_vitamin"
-            android:screenOrientation="landscape">
-        </activity>
-        <activity
-            android:name=".VitaminA"
-            android:label="@string/title_activity_vitamin"
-            android:screenOrientation="landscape">
-        </activity>
-        <activity
-            android:name=".Iron"
-            android:label="@string/title_activity_iron"
-            android:screenOrientation="landscape">
-        </activity>
-        <activity
-            android:name=".Calcium"
-            android:label="@string/title_activity_calcium"
-            android:screenOrientation="landscape">
-        </activity>
-        <activity
-            android:name=".Iodine"
-            android:label="@string/title_activity_iodine"
-            android:screenOrientation="landscape">
-        </activity>
-        <activity
-            android:name=".Folate"
-            android:label="@string/title_activity_folate"
-            android:screenOrientation="landscape">
-        </activity>
-        <activity
-            android:name=".Cooking"
-            android:label="@string/title_activity_cooking"
-            android:screenOrientation="landscape">
-        </activity>
-        <activity
-            android:name=".Alcohol"
-            android:label="@string/title_activity_alcohol"
-            android:screenOrientation="landscape">
-        </activity>
-        <activity
-            android:name=".WhyBeNutritious"
-            android:label="@string/title_activity_why_be_nutritious"
-            android:screenOrientation="landscape">
-        </activity>
-        <activity
-            android:name=".Hygiene"
-            android:label="@string/title_activity_hygiene"
-            android:screenOrientation="landscape">
-        </activity>
-        <activity
-            android:name=".Hand"
-            android:label="@string/title_activity_hand"
-            android:screenOrientation="landscape">
-        </activity>
-        <activity
-            android:name=".End"
-            android:label="@string/title_activity_end"
-            android:screenOrientation="landscape">
-        </activity>
+
     </application>
 
 </manifest>
