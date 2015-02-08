@@ -120,7 +120,7 @@
         </activity>
         <activity
             android:name=".Alcohol"
-            android:label="@string/title_activity_slide20"
+            android:label="@string/title_activity_slide21"
             android:screenOrientation="landscape">
         </activity>
 

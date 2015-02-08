@@ -10,36 +10,6 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".Alcohol" >
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:height="40dp"
-        android:textSize="30sp"
-        android:paddingLeft="120dp"
-        android:textColor="#22316C"
-        android:text="गबछवती भदहरा य आभारे च य ु ोट य यक्सी खाए "
-    />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:height="40dp"
-        android:textSize="30sp"
-        android:paddingLeft="120dp"
-        android:textColor="#22316C"
-        android:text="गबछभा बएको फच्चा य साना फारफाशरकाराई हानी "
-    />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:height="40dp"
-        android:textSize="30sp"
-        android:paddingLeft="400dp"
-        android:textColor="#22316C"
-        android:text="गि "
-    />
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

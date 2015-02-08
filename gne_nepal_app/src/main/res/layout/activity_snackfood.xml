@@ -10,43 +10,11 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".SnackFoodActivity" >
 
-    <TextView
+    <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:height="40dp"
-        android:textSize="30sp"
-        android:paddingLeft="200dp"
-        android:textColor="#22316C"
-        android:text="मी खानेकुयाहरु अस्वस्थ हुन , ् त्मसैरे धेयै "
-    />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:height="40dp"
-        android:textSize="30sp"
-        android:paddingLeft="270dp"
-        android:textColor="#22316C"
-        android:text="खानारे िरययराई हानी गि "
-    />
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_weight="5">
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:src="@drawable/cococola"/>
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="0.7"
-            android:src="@drawable/kurk"/>
-    </LinearLayout>
-
+        android:layout_weight="5"
+        android:src="@drawable/cococola"/>
 
     <LinearLayout
         android:layout_width="match_parent"
