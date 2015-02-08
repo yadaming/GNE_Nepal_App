@@ -37,7 +37,7 @@
             android:src="@drawable/folic_acid_3"/>
     </LinearLayout>
 
-    <ImageButton
+    <ImageView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"

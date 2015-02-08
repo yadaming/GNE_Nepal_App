@@ -35,18 +35,18 @@
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="match_parent"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="2">
-        <ImageButton
+        android:layout_weight="1">
+        <ImageView
             android:id="@+id/yesButton"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:layout_weight="1"
             android:onClick="yesMethodSL5"
             android:background="#00FF00"
             android:src="@drawable/yes" />
-        <ImageButton
+        <ImageView
             android:id="@+id/noButton"
             android:layout_width="match_parent"
             android:layout_height="match_parent"

@@ -37,10 +37,10 @@
             android:src="@drawable/milk"/>
     </LinearLayout>
 
-    <ImageButton
+    <ImageView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
+        android:layout_weight="0.5"
         android:src="@drawable/yes"
         android:background="#00FF00"
         android:onClick="nextMethodCalcium"
