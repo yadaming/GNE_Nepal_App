@@ -13,24 +13,16 @@
   <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:height="30dp"
-            android:textSize="25sp"
-            android:paddingLeft="110dp"
-            android:textColor="#22316C"
-            android:text="स्वस्थ खाना "
-        />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:height="30dp"
-            android:textSize="25sp"
-            android:paddingLeft="310dp"
-            android:textColor="#22316C"
-            android:text="शबटाशभन चक्की "
-        />
+       <ImageView
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:layout_weight="1"
+           android:src="@drawable/healthy_food_text"/>
+       <ImageView
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:layout_weight="1"
+           android:src="@drawable/vitamin_pill_text"/>
     </LinearLayout>
 
     <LinearLayout

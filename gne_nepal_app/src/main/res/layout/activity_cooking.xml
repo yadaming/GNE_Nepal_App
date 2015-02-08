@@ -9,33 +9,12 @@
     android:paddingBottom="@dimen/activity_vertical_margin"
     tools:context=".Cooking">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:height="40dp"
-        android:textSize="30sp"
-        android:textStyle="bold"
-        android:textColor="#22316C"
-        android:paddingLeft="180dp"
-        android:text="हाभीरे घयभा दै तनक रुऩभा खाने परपूर तथा"
-    />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:height="40dp"
-        android:textSize="30sp"
-        android:paddingLeft="200dp"
-        android:textStyle="bold"
-        android:textColor="#22316C"
-        android:text="सागऩात सदहतको खाना नै स्वस्थ खाना हो "
-    />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_weight="15">
+        android:layout_weight="10">
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="match_parent"

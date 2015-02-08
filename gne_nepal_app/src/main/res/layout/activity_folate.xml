@@ -9,40 +9,17 @@
     android:paddingBottom="@dimen/activity_vertical_margin"
     tools:context=".Folate">
 
-    <TextView
+    <ImageView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:height="40dp"
-        android:textSize="30sp"
-        android:textStyle="bold"
-        android:textColor="#22316C"
-        android:paddingLeft="350dp"
-        android:text="पोशरक एशसड "
-    />
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:height="40dp"
-        android:textSize="30sp"
-        android:paddingLeft="90dp"
-        android:text="दार, साग य अन्म हरयमो सागऩातभा अधधक भात्राभा "
-    />
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:height="40dp"
-        android:textSize="30sp"
-        android:paddingLeft="290dp"
-        android:text="पोशरक एशसड ऩाइन्ि। "
-    />
+        android:layout_weight="1"
+        android:src="@drawable/folic_acid"/>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_weight="1">
+        android:layout_weight="5">
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
@@ -60,30 +37,10 @@
             android:src="@drawable/folic_acid_3"/>
     </LinearLayout>
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:height="40dp"
-        android:textSize="30sp"
-        android:textColor="#ffcf0918"
-        android:textStyle="bold"
-        android:paddingLeft="340dp"
-        android:text="FOLIC ACID"
-    />
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:height="40dp"
-        android:textSize="30sp"
-        android:paddingLeft="120dp"
-        android:text="यसऱे नवजात शिि मा हुनसक्ने जटिऱताफाि जोगाउँ छ। "
-    />
-
     <ImageButton
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="5"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
         android:src="@drawable/yes"
         android:background="#00FF00"
         android:onClick="nextMethodFolate"
