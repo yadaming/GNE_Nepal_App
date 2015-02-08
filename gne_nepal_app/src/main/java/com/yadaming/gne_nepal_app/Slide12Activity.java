@@ -99,7 +99,7 @@ public class Slide12Activity extends Activity {
         setContentView(R.layout.activity_slide12);
 
         SoundModule SoundModule = new SoundModule(this);
-        SoundModule.play(R.raw.slide_11_version_2);
+        SoundModule.play(R.raw.slide_11_version2);
 
         greensCheckBox = (CheckBox) findViewById(R.id.greensCheckBox);
         oilsCheckBox = (CheckBox) findViewById(R.id.oilsCheckbox);
