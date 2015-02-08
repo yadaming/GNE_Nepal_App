@@ -9,29 +9,16 @@
     android:paddingBottom="@dimen/activity_vertical_margin"
     tools:context=".Rice_main_circled">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <ImageView
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:height="40dp"
-        android:textSize="30sp"
-        android:paddingLeft="280dp"
-        android:textColor="#22316C"
-        android:text="बात- तागत ददन्ि "
-    />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:height="40dp"
-        android:textSize="30sp"
-        android:paddingLeft="300dp"
-        android:textColor="#000000"
-        android:text="Rice - Energy"
+        android:layout_weight="1"
+        android:src="@drawable/rice_main_circled_text"
     />
 
     <ImageView
         android:id="@+id/imageView1"
-        android:layout_weight="8"
+        android:layout_weight="10"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:src="@drawable/rice_main_rice_circled"
@@ -41,6 +28,7 @@
         android:id="@+id/yesButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_weight="1"
         android:text="@string/next"
         android:background="#00ff00"
         android:onClick="nextMethodRiceMainCircled"

@@ -9,79 +9,39 @@
     android:paddingBottom="@dimen/activity_vertical_margin"
     tools:context=".Calcium">
 
-    <TextView
+    <ImageView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:height="40dp"
-        android:textSize="30sp"
-        android:textStyle="bold"
-        android:textColor="#22316C"
-        android:paddingLeft="350dp"
-        android:text="क्मान्ससमभ"
-    />
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:height="40dp"
-        android:textSize="30sp"
-        android:paddingLeft="100dp"
-        android:text="हड्डी फशरमो फनाउन य सॊक्रभणसॊग रड्न भद्दत गि "
-    />
-
+        android:layout_weight="1"
+        android:src="@drawable/calcium_text"/>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_weight="1">
+        android:layout_weight="5">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:src="@drawable/greens"/>
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:src="@drawable/legs"/>
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:orientation="vertical">
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_weight="9"
-                android:src="@drawable/fish"/>
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:height="40dp"
-                android:textSize="30sp"
-                android:textColor="#ffcf0918"
-                android:textStyle="bold"
-                android:paddingLeft="180dp"
-                android:text="CALCIUM"
-            />
-        </LinearLayout>
+            android:src="@drawable/herring"/>
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_weight="333"
+            android:layout_weight="1"
             android:src="@drawable/milk"
         />
     </LinearLayout>
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:height="40dp"
-        android:textSize="30sp"
-        android:paddingLeft="190dp"
-        android:text="द धय भािाभा क्मान्ससमभ ऩाइन्ि "
-        />
-
     <ImageButton
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="2"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
         android:src="@drawable/yes"
         android:background="#00FF00"
         android:onClick="nextMethodCalcium"

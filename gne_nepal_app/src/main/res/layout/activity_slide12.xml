@@ -99,6 +99,7 @@
         android:onClick="nextMethodSL12"
         android:text="@string/next" />
 
-</LinearLayout>
+    </LinearLayout>
+
 </LinearLayout>
 
