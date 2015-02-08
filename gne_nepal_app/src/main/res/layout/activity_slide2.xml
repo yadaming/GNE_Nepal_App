@@ -10,49 +10,12 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".Slide2Activity" >
 
-    <LinearLayout
+    <ImageView
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1">
-        <ImageView
-            android:id="@+id/imageView3"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:src="@drawable/slide2c"
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="16dp"/>
-        <ImageView
-            android:id="@+id/imageView4"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:src="@drawable/slide2d"
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="16dp"/>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="0dp"
-        android:layout_weight="1">
-        <ImageView
-            android:id="@+id/imageView2"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:src="@drawable/slide2b"
-            android:layout_marginLeft="30dp"
-            android:layout_marginRight="1dp"/>
-        <ImageView
-            android:id="@+id/imageView1"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:layout_marginRight="30dp"
-            android:layout_marginLeft="30dp"
-            android:src="@drawable/slide2a" />
-    </LinearLayout>
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:src="@drawable/slide2"
+    />
 
     <LinearLayout
         android:layout_width="match_parent"
